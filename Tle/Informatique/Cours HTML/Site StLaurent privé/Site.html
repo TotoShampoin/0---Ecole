@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="Style.css" />
+		<title>L'enseignement au lycée</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>	<!-- L'entête, avec un menu -->
+			<img src="Logo big.png" alt="U F A Saint Laurent La Paix Notre Dame" style="width:20%;"/>
+			<div id="Menu">
+				<a href=""> Le groupe scolaire </a>
+				<a href=""> École </a>
+				<a href=""> Collège </a>
+				<a href=""> Lycée </a>
+				<a href=""> UFA-BTS </a>
+				<a href=""> Pastorale </a>
+			</div>
+		</header>
+		<div id="Contenu">		<!-- Les différentes sections de la page d'accueil. Il faut cliquer sur un titre pour développer son contenu -->
+			<a onclick="$('#a').toggle();" >Enseignements d’exploration :</a><br />
+			<span id="a">
+				<ul>
+					<li>Sciences Economiques et Sociales</li>
+					<li>Principes Fondamentaux de l’Economie et de la Gestion</li>
+					<li>Biotechnologies</li>
+					<li>Méthodes et pratiques scientifiques</li>
+					<li>Littérature et société</li>
+					<li>Sciences et laboratoires</li>
+					<li>Santé et social</li>
+					<li>Histoire de l'Art</li>
+					<li>E.P.S</li>
+					<li>ISN (informatique et science du numérique)</li>
+				</ul>
+			</span>
+			<a onclick="$('#b').toggle();" >Option Facultative</a><br />
+			<span id="b">
+				<ul>
+					<li>Options : Latin, Arts plastiques</li>
+					<li>Options hors contrat : Japonais, Chinois, Théâtre, Langage des signes</li>
+				</ul>
+			</span>
+			<a onclick="$('#c').toggle();" >Classes de Première</a><br />
+			<span id="c">
+				<ul>
+					<li>L (Littéraire) – ES (Economie et Social) – S (Scientifique)</li>
+					<li>STL (Sciences et technologies de Laboratoire) options Biotechnologies et Sciences Physiques et Chimiques en Laboratoire</li>
+					<li>STMG (Sciences et Technologies du management et de la Gestion)</li>
+					<li>STS2S (Sciences et Technologies de la Santé et du Social)</li>
+				</ul>
+			</span>
+			<a onclick="$('#d').toggle();" >Classes de Terminale</a><br />
+			<span id="d">
+				<ul>
+					<li>L spécialité arts, LV1 ou LV2 approfondie, mathématiques, droit et grands enjeux du monde contemporain</li>
+					<li>ES spécialité mathématiques, sciences sociales et politiques et économie approfondie</li>
+					<li>S spécialité mathématiques, physique-chimie, sciences de la vie et de la Terre, informatique et sciences du numérique</li>
+					<li>STL (option Biochimie Génie Biologique ou physique)</li>
+					<li>STG (option Mercatique)</li>
+					<li>ST2S</li>
+				</ul>
+			</span>
+			<a onclick="$('#e').toggle();" >Certification Voltaire</a><br />
+			<span id="e">
+				<p>Vous êtes bon en orthographe et vous voulez en apporter la preuve officielle dans un C.V. ...</p>
+				<p>Vous voulez vous améliorer en orthographe et vous cherchez une motivation...</p>
+				<p>Inscrivez-vous à la "Certification Voltaire" !</p>
+			</span>
+			<a onclick="$('#f').toggle();" >Certification Cambridge</a><br />
+			<span id="f">
+				<p>Préparation au Cambridge pour tous les niveaux.</p>
+			</span>
+			<a onclick="$('#g').toggle();" >Certification d'Allemand</a><br />
+			<span id="g">
+				<p>Préparation pour les niveaux A1/A2, B1/B2 pendant la seconde et la première seulement.</p>
+			</span>
+			<a href="page2.html">Inscription</a><br />
+		</div>
+	</body>
+</html>
+
+<!-- Fait avec Marilou et Bastien -->

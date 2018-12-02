@@ -1,0 +1,41 @@
+body
+{
+	background: url("Ascenseur.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	font-family: cursive;	
+}
+
+header
+{
+	font-size: large;
+	color: black;
+	background-color: rgba(255,255,255,0.75);
+	width: 720px;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#menu
+{
+	display: flex;
+	width: 150px;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap-reverse;
+}
+
+a
+{
+	width: 60px;
+	height: 30px;
+	background-color: rgb(229,229,229);
+	border: 1px solid black;
+	text-align: center;
+}
+
+#here
+{
+	background-color: rgb(229,229,32);
+}
