@@ -1,0 +1,179 @@
+
+
+
+(function(){
+
+if (window.document !== window.top.document) return;
+
+var $PROTOCOL = window.location.protocol;//'http:';
+
+
+/* -------------------------------------------------
+// Fonction pour logger les messages de dev
+*/
+var h = 250;
+var w = 300;
+
+
+/* Le CSS pour le positionnement */
+document.write("<style type=\"text/css\">#clickInTexSlideDiv{border: 0; margin: 0; width: " + (w + 14) + "px; height: " + 413 + "px; z-index: 1900000099; padding: 0; bottom: " + 0 + "px; left: " + (-310) + "px; position: fixed; *position: absolute;};</style>");
+
+
+
+/* Pour IE */
+if (document.all)
+	document.write("<style type=\"text/css\">#clickInTexSlideDiv{left: expression( ( 0 + ( ignoreMe2 = " + (-310) + " ) ) + 'px' ); top: expression( ( 0 + ( ignoreMe = (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop) + (ignoreMe3 = (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)) - " + (h + 120) + " ) ) + 'px' );};</style>");
+
+	
+var moreParams = "";
+
+var force = document.location.href.split('#citslidein_');
+if (force[1])
+{
+	force = force[1].split('_')[1];
+	moreParams += "&force=" + force;
+}
+
+
+
+var clickintextWriteSlide = function()
+{
+	if (!doc.citVars.fixedAvailable()) return;
+
+	if (typeof doc.citSlideinOrFooterExpandLoadedXX == 'undefined')
+	{
+		
+
+		var cithref = '';
+
+		cithref = document.location.href;
+		var cithrefpos = cithref.indexOf('#citslidein_');
+		if (cithrefpos != -1)
+			cithref = cithref.substr(cithrefpos + 1);
+		else
+			cithref = '';
+
+		var js = doc.createElement('script');
+		js.type = 'text/javascript';
+				if (doc.citVars.isMobile)
+		{
+			if (!doc.citVars.footerMobileLoaded)
+			{
+				doc.citVars.footerMobileLoaded = true;
+				js.src = $PROTOCOL + '//www-105.clickintext.net/footermobile/exec.php?a=12334&zk=jFS9zypYBADRl&apicitIdPAPXTime=' + (doc.citVars.t) + '&apicitIdPAPXTimeMore=' + (doc.citVars.tm) + '&cithref=' + cithref + '&if=' + ((window.document === window.top.document) ? 0 : 1) + moreParams + (typeof document.CMRPrivateKeys != 'undefined' ? '&' + document.CMRPrivateKeys : '');
+				doc.body.appendChild(js);
+			}
+		}
+		else
+		{
+			js.src = $PROTOCOL + '//www-105-slidein.clickintext.net/exec.dev.php?a=12334&zk=jFS9zypYBADRl&apicitIdPAPXTime=' + (doc.citVars.t) + '&apicitIdPAPXTimeMore=' + (doc.citVars.tm) + '&cithref=' + cithref + '&if=' + ((window.document === window.top.document) ? 0 : 1) + moreParams + (typeof document.CMRPrivateKeys != 'undefined' ? '&' + document.CMRPrivateKeys : '') + (doc.citVars.isMobile ? '&mobile=1' : '&mobile=0');
+			doc.body.appendChild(js);
+		}
+						
+	}
+	doc.citSlideinOrFooterExpandLoadedXX = true;
+
+}
+
+
+
+
+
+
+var positionAvailable = 1;
+var topWindow = window;
+var forDebug = '';
+try {
+	while (topWindow.parent.document !== topWindow.document)
+	{
+		topWindow = topWindow.parent;
+		forDebug += 'X';
+	}
+}
+catch(e)
+{
+	positionAvailable = 0;
+		forDebug += 'Y';
+}
+
+try {
+	var doc = topWindow.document;
+	document.mainDoc = doc;
+	if (typeof doc.citVars == 'undefined') doc.citVars = {};
+}
+catch(e){
+	topWindow = window;
+	var doc = topWindow.document;
+	document.mainDoc = doc;
+	if (typeof doc.citVars == 'undefined') doc.citVars = {};
+}
+
+
+//
+// System pour n'appeler qu'une seule fois l'apicit loader
+//
+doc.citVars.launcher = function(fct, fctAdsafe, opts){
+	if (typeof fctAdsafe != 'undefined')
+	{
+		if (doc.citVars.adsafeLoaded)
+		{
+			fctAdsafe();
+		}
+		else
+		{
+			if (typeof doc.citVars.adsafefcts == 'undefined') doc.citVars.adsafefcts = [];
+			doc.citVars.adsafefcts.push(fctAdsafe);
+		}
+	}
+
+	if (typeof doc.citVars.apicited != 'undefined')
+	{
+		fct();
+	}
+	else
+	{
+		if (typeof doc.citVars.launcherfcts == 'undefined') doc.citVars.launcherfcts = [];
+		doc.citVars.launcherfcts.push(fct);
+
+		if (typeof doc.citVars.apicitcalled == 'undefined')
+		{
+			doc.citVars.apicitcalled = true;
+			
+			document.onapicitCall = function(t, tm){
+				doc.citVars.t = t;
+				doc.citVars.tm = tm;
+				doc.citVars.apicited = true;
+				var a = 0;
+				while (typeof doc.citVars.launcherfcts[a] != 'undefined')
+				{
+					doc.citVars.launcherfcts[a++]();
+				}
+			}
+
+			document.write('<sc' + 'ript type="text/javascript" src="http://lb.apicit.net/loader.v8.php?apicitDatas=1%2Fsli%2Fcit12334&RK=CIT&call=document.onapicitCall&jQ="></scr' + 'ipt>');
+
+		}
+	}
+};
+
+
+doc.citVars.launcher(clickintextWriteSlide, function()
+{
+	doc.citVars.adsafeTags.push('50378');
+	doc.citVars.takeALook();
+	return;
+
+	var a = 0;
+	while (typeof doc.citVars.adsafeDatas[a] != 'undefined')
+	{
+		if (doc.citVars.adsafeDatas[a].level == 9)
+		{
+			doc.citQuery(document.getElementById('clickInTexSlideDiv')).remove();
+			return;
+		}
+		a++;
+	}
+});
+
+
+})();

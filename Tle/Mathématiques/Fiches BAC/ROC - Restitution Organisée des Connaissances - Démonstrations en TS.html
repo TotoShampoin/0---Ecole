@@ -1,0 +1,2624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00020000000000000000 -->
+<html lang="fr" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style>
+html{min-height:100%}
+body{background-attachment:fixed;color:black;margin:0;padding:20px;text-align:left;font-family:Arial, Helvetica, Sans-Serif;background-image:linear-gradient(#aecdff,#5670A1 40%)}
+p{margin:8px 5px 8px 5px}
+h1, h2, h3, h4, h5, h6{font-family:'Trebuchet MS','Gill Sans',Arial,Helvetica,sans-serif;font-weight: bold;color:#666633;text-shadow:#bbbbbb 2px 2px 1px;margin:.5em}
+h1{font-size:1.6em;text-align:center}
+h2{font-size:1.3em;margin-left:.5em}
+h1:hover, h2:hover, h3:hover{color:#ff0000}
+h3{font-size: 1.2em}
+h2 h3{font-family:Verdana,Lithograph,Impact}
+h4,h5,h6{font-size:1.1em}
+a:link, a:visited{color:#546d9e}
+a:hover{color:#ff0000;font-weight:bold}
+hr{color:#D9D9D9;background-color:#D9D9D9;height:1px;border:0;margin:.5em 0 .5em 0}
+.fontCI{font-family:Verdana,Lithograph,Impact}
+footer{border-top:4px solid #a7a7e0;color:#ffffff;background:#1c2c44;padding:10px;font-size:0.9em;height:1.5em}
+footer a:link, footer a:visited{text-decoration:none;color:#94AdDe}
+footer a:hover{color:#ff0000}
+#YM{float:left}
+#MAJ{float:right}
+.it{font-style:italic}
+.bf{font-weight:bold}
+.ul{text-decoration:underline}
+.ct{text-align:center}
+.red{color:red}
+.green{color:green}
+.md{vertical-align:middle}
+.bs{vertical-align:baseline}
+.tbt{vertical-align:text-bottom}
+.left{float:left}
+.rgt{float:right}
+.FixedBottomright{position:fixed;bottom:4em;right:1.5em}
+.Cell{margin:.5em;display:inline;border:.1em solid #FF6600;float:left;background-color:#E6E6E6}
+.CLS{clear:both}
+dl dt{margin-left:.5em;font-size:1.1em;margin-top:.6em}
+.listH{float:left;list-style:none}
+.listH li{display:block;float:left}
+article{margin:.5em}
+.just{text-align:justify}
+.prop{border:medium solid red;padding-left:.5em}
+.pt{border-bottom:solid .15em red;padding:.3em}
+img {max-width:80%;height:auto;width:auto}
+.topnav {font-size:.9em;background-image:linear-gradient(#aecdff,white 110%);overflow: hidden;border-left:1px solid #4f6fa7;border-right:1px solid #4f6fa7}
+.topnav a {float:left;display:block;text-align:center;text-decoration:none;}
+.topnav .icon {font-size:30px;display:none}
+.dropdown {float:left;overflow:hidden}
+.dropdown .dropbtn {border:none;outline:none;font-family:inherit}
+.topnav a, .dropdown .dropbtn {height:1.1em;margin:1px;margin-top:1px;font-weight:bold;font-size:.9em;color:white;padding:.4em .4em;background-image:linear-gradient(#08298A,white 140%);transition: all .5s}
+.dropdown-content {display:none;position:absolute;z-index:1;}
+.dropdown-content a {float:none;text-decoration:none;display:block;text-align:left}
+.topnav a:hover, .dropdown:hover .dropbtn {background-image:linear-gradient(#a7bbdf,#cbdff9);padding: .4em .8em;margin:3px}
+.dropdown-content a:hover {background-color:#ddd;color:black;padding: .4em .8em}
+.dropdown:hover .dropdown-content {display:block}
+.dropdown .dropbtn a {padding:0;background:none;margin:0;font-size:1em}
+
+@media screen and (min-width:481px) {body{padding:.8em}
+    #header{position:relative;display:block;background:url(/include/Header_para.png) 0 0 no-repeat;background-color:white;background-size:auto;height:76px;line-height:80px;border:1px solid #4f6fa7;border-bottom:2px solid #4f6fa7}
+}
+@media screen and (min-width:990px) {
+    #header_para{margin:0;padding-left:860px;padding-bottom:0;border:0;background:url(/include/Para/para_light.gif) top right no-repeat;width:50px;height:50px;height:80px;line-height:80px;border-bottom:0}
+}
+@media screen and (max-width: 480px) {body{padding:.3em}
+    #header{position:relative;display:block;background:url(/include/Bann/Header-370.png) 0 0 no-repeat;background-color:white;background-size:auto;height:76px;line-height:80px;border-bottom:2px solid #4f6fa7;border:1px solid #4f6fa7}
+}
+#header a{position:absolute;width:100%;background-color:red;z-index:10}
+
+@media screen and (max-width: 600px) {
+  /*.topnav a:not(:first-child), .dropdown .dropbtn {display:none}*/
+  .topnav a, .dropdown .dropbtn {display:none}
+  .topnav a.icon {float: left;display:block;position:absolute;top:10px;left:10px;background-image:radial-gradient(rgba(0,0,255,1),rgba(0,0,255,0) 110%);}
+.dropdown-content a {background-image:linear-gradient(gray,white);}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {position:absolute;font-size:14px;top:0;left:0;}
+  .topnav.responsive a {float: none;display: block;text-align: center;}
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {display: block;width: 100%;text-align: center;}
+  .topnav.responsive .dropdown .dropbtn a{pointer-events:none}
+}
+#maincontent{font-size:11pt;height:auto;background-color:#ffffff;border:none;padding-top:1px;border:1px solid #4f6fa7;border-top:none}
+.topnav .active {background-image:linear-gradient(#a7bbdf,#cbdff9)}
+/*#content{border:1px solid red;border-radius:20px}*/
+#header{border-radius:10px 10px 0 0}
+#maincontent{border-radius:0 0 20px 20px}
+footer{border-radius:0 0 10px 10px}
+</style>
+<link rel="icon" type="images/png" href="http://xymaths.free.fr/include/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROC - Restitution Organisée des Connaissances - Démonstrations en TS</title><meta name="keywords" content="ROC, restitution organisée des connaissances, démonstration, démonstrations de cours, TS, terminale S, nouveau programme">  <meta name="description" content="Liste officielle des ROC (Restitution Organisée des Connaissances) à connaître au programme de terminale S">
+  <meta name="publisher" content="Yoann Morel">
+<meta name="dcterms.rightsHolder" content="Yoann Morel">
+<meta name="author" lang="fr" content="Yoann MOREL">
+<meta property="og:title" content="ROC - Restitution Organisée des Connaissances - Démonstrations en TS"><meta property="og:description" content="Liste officielle des ROC (Restitution Organisée des Connaissances) à connaître au programme de terminale S"><meta property="og:type" content="school"><meta property="og:image" content="http://xymaths.free.fr/Accueil/Dessin7_small.jpg"><meta property="og:url" content="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php"><meta property="og:site_name" content="xymaths.free.fr"><script type="text/javascript" async="" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/ga.js.téléchargement"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18363501-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body id="top">
+<div id="content">
+
+<a href="http://xymaths.free.fr/"><div id="header"><div id="header_para"></div></div></a>
+
+<div class="topnav" id="myTopnav">
+  <a href="http://xymaths.free.fr/Index/">@ccueil</a>
+  <a href="http://xymaths.free.fr/Lycee/2nde/Mathematiques-2nde.php">Seconde</a>
+
+  <div class="dropdown"><div class="dropbtn">Première</div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/Lycee/1S/Mathematiques-1S.php">S</a>
+      <a href="http://xymaths.free.fr/Lycee/1STI/Mathematiques-1STI.php">STI2D</a>
+      <a href="http://xymaths.free.fr/Lycee/1STG/Mathematiques-1STMG.php">STMG</a>
+      <a href="http://xymaths.free.fr/index.php?dir=Lycee&amp;subdir=1ES">ES</a>
+      <a href="http://xymaths.free.fr/index.php?dir=Lycee&amp;subdir=1ES_Spe">ES Spécialité</a></div></div> 
+
+  <div class="dropdown"><div class="dropbtn"><a href="http://xymaths.free.fr/Lycee/Terminale.php">Terminale</a></div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/Lycee/TSTG/Mathematiques-Terminale-STG.php">STMG</a>
+      <a href="http://xymaths.free.fr/Lycee/TSTI/Mathematiques-Terminale-STI2D.php">STI2D</a>
+      <a href="http://xymaths.free.fr/Lycee/TS/Mathematiques-Terminale-S.php">S</a></div></div> 
+
+  <div class="dropdown"><div class="dropbtn"><a href="http://xymaths.free.fr/BTS/">BTS</a></div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/BTS/Groupe-A/Mathematiques-BTS.php">Groupe A (SE)</a>
+      <a href="http://xymaths.free.fr/BTS/Groupe-B/Mathematiques-BTS.php">Groupe B ( MS / MI )</a></div></div>
+
+  <div class="dropdown"><div class="dropbtn">Numérique</div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/IUT/Modelisation-Simulation-Methodes-numeriques.php">Simulation et calcul num.</a>
+      <a href="http://xymaths.free.fr/Signal/Communication-Numerique-cours-TP.php">Communication num.</a></div></div>
+
+  <div class="dropdown"><div class="dropbtn"><a href="http://xymaths.free.fr/Informatique-Programmation/">Informatique</a></div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/Informatique-Programmation/Cours-Algorithmique/Introduction.php">Algorithmique</a>
+      <a href="http://xymaths.free.fr/Matlab/">Matlab</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/Scilab/">Scilab</a>
+      <a href="http://xymaths.free.fr/Lycee/Calculatrice-TI.php">Calculatrice TI</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/Latex/">Latex</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/html5/">html5</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/html-css/">html &amp; css</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/php/">php</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/javascript/">Javascript</a>
+      <a href="http://xymaths.free.fr/Informatique-Programmation/python/">python</a>
+      <a href="http://xymaths.free.fr/Lycee/TS/index.php?dir=Divers&amp;subdir=Emacs">Emacs</a>
+      <a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Gimp">The gimp</a></div></div>
+
+  <div class="dropdown"><div class="dropbtn"><a href="http://xymaths.free.fr/MathAppli/Mathematiques-Appliquees-et-applications.php">Math@ppliquées</a></div>
+    <div class="dropdown-content">
+      <a href="http://xymaths.free.fr/MathAppli/Introduction/">Introduction</a>
+      <a href="http://xymaths.free.fr/MathAppli/Cout-marginal-Optimum-Economique/">Application économique: coût marginal</a>
+      <a href="http://xymaths.free.fr/MathAppli/Taux-Remboursement-Interets-Pret-Immobilier/Principe-Calculs-Prets-taux-fixe.php">Prêt bancaire, taux, mensualités</a>
+<a href="http://xymaths.free.fr/MathAppli/Fractales-IFS-Jeu-du-chaos/">Fractales, IFS &amp; jeu du chaos</a>
+<a href="http://xymaths.free.fr/MathAppli/Numerique/Numerisation-signal.php">Numérisation d'un signal</a>
+<a href="http://xymaths.free.fr/MathAppli/Fourier/Transformee-de-Fourier.php">Analyse de Fourier</a>
+<a href="http://xymaths.free.fr/index.php?dir=MathAppli&amp;subdir=Conversion_Analogique_Numerique">Conversion analogique / Numérique</a>
+<a href="http://xymaths.free.fr/MathAppli/Methodes-Numeriques/Methodes-Numeriques-Integration-EDO.php">Méthodes numériques</a>
+<a href="http://xymaths.free.fr/index.php?dir=MathAppli&amp;subdir=Simulation_Onde&amp;fich=Simulation_Onde.html">Propagation d'ondes</a>
+<a href="http://xymaths.free.fr/MathAppli/Furtif/Principe-Radar-Furtif.php">Furtivité</a>
+<a href="http://xymaths.free.fr/MathAppli/GPS/Principe-Fonctionnement-GPS.php">Fonctionnement du GPS </a>
+<a href="http://xymaths.free.fr/index.php?dir=MathAppli&amp;subdir=Transmission">Communication numérique</a>
+<a href="http://xymaths.free.fr/index.php?dir=MathAppli&amp;subdir=Reseaux">Réseaux - Google - Neurones</a>
+<a href="http://xymaths.free.fr/MathAppli/Algorithme-Interieur-Polygone/">Intérieur d'un polygone - Algorithme</a>
+<a href="http://xymaths.free.fr/MathAppli/Binome/Binome-Newton-Exposant-fractionnaire.php">Binôme de Newton - Exposant fractionnaire</a>
+</div></div>
+
+<div class="dropdown"><div class="dropbtn"><a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=.">Divers</a></div>
+    <div class="dropdown-content">
+<a href="http://xymaths.free.fr/Plan/">Plan du site</a>
+<a href="http://xymaths.free.fr/index.php?dir=Logique&amp;subdir=.">Logique</a>
+<a href="http://xymaths.free.fr/Generateur-Devoirs/">Générateur de devoirs</a>
+<a href="http://xymaths.free.fr/Divers/Text-Edit.php">Editeur de texte</a>
+<a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Contact">Contact</a>
+<a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Apropos">Apropos</a>
+<a href="http://xymaths.free.fr/Divers/Bibliographie/">Biblio/Filmo</a>
+<a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Liens">Liens</a>
+<a href="http://xymaths.free.fr/EN/"><img width="16" height="16" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/icone-anglais-16.png" class="md" alt="Anglais">&nbsp;English pages</a>
+</div></div>
+
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+</div>
+
+<div id="maincontent"> 
+
+
+<div id="pubtop" class="rgt"><div id="pubtopafter">
+  <script type="text/javascript" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/JTRKaLaKQEwem" title="Classic (IAB)"></script>
+</div></div>
+
+    <article>
+<h1>Restitutions Organisées des connaissances (ROC)</h1>
+<h2 class="ct">Les incontournables à connaître</h2>
+<p class="ct"><strong><a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Contact" style="color:black;">Y. Morel</a></strong></p>
+<hr>
+
+<br>
+
+<ul>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00011000000000000000">Introduction - Que faire avec
+  ces ROC - Pourquoi apprendre ça ?</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00020000000000000000">Suites</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00030000000000000000">Fonction exponentielle</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00040000000000000000">Intégration</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00050000000000000000">Géométrie vectorielle dans l'espace</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00060000000000000000">Produit scalaire dans l'espace</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00070000000000000000">Probabilités</a>
+<ul>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00071000000000000000">Conditionnement, indépendance</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00072000000000000000">Probabilités continues</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00073000000000000000">Intervalle de fluctuation</a></li>
+<li><a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#SECTION00074000000000000000">Estimation</a>
+</li></ul>
+</li></ul>
+<hr>
+
+<br><br>
+<h2><a id="SECTION00011000000000000000">
+Introduction - Que faire avec ces ROC - Pourquoi apprendre ça ?</a>
+</h2> 
+
+<br>
+<div class="just">
+Dans cette page sont contenues toutes les ROC 
+(Restitution organisée des Connaissances) indiquées explicitement dans le nouveau
+programme de terminale S entré en vigueur à la rentrée 2012. 
+
+<br>
+Toutes ces ROC sont à connaître impérativement. 
+Elles sont exigibles le jour du bac (et éventuellement lors d'un oral
+de rattrapage). 
+
+Cela ne signifie pas que la connaissance de ces quelques
+démonstrations soit suffisante pour appréhender correctement le
+programme de terminale S. 
+
+<br><br>
+<h3>Pourquoi apprendre ces démonstrations ?</h3>
+
+Pour plusieurs raisons: 
+<ul>
+  <li>La réponse la plus "simpliste et dénuée de sens" (mathématique
+    mais pas que) 
+    est qu'elles sont exigibles au bac, que chaque année, sur chaque
+    sujet, un exercice (ou partie) porte dessus. 
+    
+    <br>
+    Il faut donc les connaître...
+  </li>
+
+  <li>
+    Ces démonstrations sont à travailler et à être connues car elles
+    contiennent des éléments clés sur le programme de terminale. 
+
+    <br>
+    C'est en se frottant à celles-ci que l'on peut savoir si on
+    maîtrise effectivement les connaissances mathématiques requises, 
+    pour la démonstration en question certes, mais aussi pour aborder
+    d'autres types d'exercices, de problèmes, ...
+  </li>
+
+  <li>
+    Utiliser et appliquer une propriété ou un théorème demande de
+    connaître un ensemble d'hypothèses à vérifier 
+    (qui consituent d'une certaine façon son domaine d'application ou
+    de validité). 
+
+    <br>
+    C'est en travaillant et comprenant sa démonstration que l'on peut
+    comprendre clairement l'utilité de chacune de ses hypothèses,
+    pourquoi elles sont nécessaires, pourquoi la propriété devient
+    fausse si on en oublie une, ...
+  </li>
+
+  <li>
+    Souvent, quand on ne sait pas résoudre un problème, répondre à une
+    question, c'est parce que "on ne sait pas comment commencer", 
+    "on n'a pas d'idée"... 
+    <br>
+    Les démonstrations contiennent justement ces idées. 
+    Cette question me fait penser à tel théorème ou telle propriété ? 
+    Alors j'ai une idée pour l'attaquer: celle contenue dans sa
+    démonstration. 
+
+    <br>
+    Pour cette raison, entre autre, il est donc conseillé d'apprendre
+    non pas chaque démonstration par coeur, mais d'essayer de prendre
+    du recul, et de retenir surtout l'idée principale 
+    (de la même façon qu'on n'apprend pas par cœur une œuvre complète
+    d'un écrivain ou d'un philosophe, mot à mot, mais qu'on se
+    concentre plus sur la synthèse de son, ou ses, idées
+    directrices). 
+    
+    <br><br>
+    En générale, au niveau terminale S, une démonstration = une idée, 
+    le reste de la démonstration étant constitué de calculs ou
+    d'application d'autres résultats connus. 
+  </li>
+
+  <li>
+    Enfin, sans sa démonstration, une propriété se réduit à une simple
+    recette de cuisine. 
+
+    On peut encore l'utiliser, l'appliquer, mais au prix fort: 
+    il faut être exactement dans le cadre imposé par la recette, 
+    une hypothèse non satisfaite, un élément manquant et celle-ci
+    doit-être purement et simplement abondonnée. 
+
+    <br>
+    En connaissant la démonstration, son mécanisme, même si la
+    propriété n'est pas directement utilisable, on a une chance de
+    pouvoir néanmoins l'adapter au cas précis que l'on a sous les
+    yeux. 
+    Les conclusions ne seront certainement pas les mêmes, mais
+    peut-être peuvent-elles alors suffire pour résoudre le problème. 
+  </li>
+</ul>
+
+Pour toutes ces raisons, il est donc largement conseillé de bien
+travailler et connaître ces démonstrations, qui valent donc largement
+autant que de faire et refaire des exercices plus ou moins "types", 
+et du coup, est largement aussi conseillé de ne pas s'arrêter
+uniquement à ces quelques maigres démonstrations pointées du doigt par
+le programme, et donc de revenir sur ses cours, et de s'attabler
+sérieusement devant toutes les démonstrations.
+
+
+
+<br><br>
+
+<h2><a id="SECTION00020000000000000000">
+Suites</a>
+</h2> 
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00020010000000000000"><span class="pt">Propriété</span></h4>
+Si <img width="44" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img1.png" alt="$(u_n)$">
+ et <img width="42" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img2.png" alt="$(v_n)$">
+ sont deux suites telles que 
+<ul>
+<li>à partir d'un certain rang, 
+<img width="77" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img3.png" alt="$u_n\geqslant v_n$">, 
+</li>
+<li>
+<img width="148" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img4.png" alt="$\dsp\lim_{n\to+\infty} v_n=+\infty$">
+
+</li>
+</ul>
+<br>
+alors, 
+<img width="149" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img5.png" alt="$\dsp\lim_{n\to+\infty} u_n=+\infty$">.
+</div>
+
+
+
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+Comme <img width="148" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img4.png" alt="$\dsp\lim_{n\to+\infty} v_n=+\infty$">, tout intervalle <img width="80" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img6.png" alt="$]A;+\infty[$">, <img width="67" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img7.png" alt="$A\in{\rm I\kern-.1567em R}$">, contient tous les 
+<img width="26" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img8.png" alt="$v_n$">
+ à partir d'un rang 
+<img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img9.png" alt="$n_0$">. 
+
+</p><p>
+C'est-à-dire que, dès que 
+<img width="68" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img10.png" alt="$n\geqslant n_0$">, on a 
+<img width="70" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img11.png" alt="$v_n&gt;A$">. 
+
+</p><p>
+Or, à partir d'un certain rang, que l'on peut noter 
+<img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img12.png" alt="$n_1$">, 
+<img width="77" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img3.png" alt="$_n\geqslant v_n$">. 
+
+</p><p>
+Ainsi, si on note 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img13.png" alt="$N$">
+le plus grand des rangs 
+<img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img9.png" alt="$n_0$">
+et <img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img12.png" alt="$n_1$">, 
+on a, pour tout rang 
+<img width="66" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img14.png" alt="$ n\geqslant N$">, <img width="121" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img15.png" alt="$u_n\geqslant v_n&gt;A$">. 
+
+</p><p>
+En d'autres termes, tout intervalle 
+<img width="80" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img6.png" alt="$]A;+\infty[$">
+ contient tous les
+<img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img16.png" alt="$ u_n$">
+  à partir du rang <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img13.png" alt="$N$">, 
+ce qui est la définition de 
+<img width="149" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img5.png" alt="$\dsp\lim_{n\to+\infty} u_n=+\infty$">.
+ 
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$\square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00020020000000000000"><span class="pt">Propriété</span></h4>
+Si une suite est croissante et converge vers un réel <img width="12" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img18.png" alt="$ l$">
+, 
+  alors tous les termes de la suite sont inférieurs ou égaux à <img width="12" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img18.png" alt="$ l$">. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> Raisonnement par l'absurde: 
+
+</p><p>
+Supposons qu'il existe un rang <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img19.png" alt="$ p$">
+ pour lequel <img width="61" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img20.png" alt="$ u_p&gt;l$">
+. 
+  Alors, il existe un réel <img width="58" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img21.png" alt="$ \alpha&gt;0$">
+ tel que <!-- MATH
+ $u_p=l+\alpha$
+ -->
+<img width="101" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img22.png" alt="$ u_p=l+\alpha$">
+. 
+
+</p><p>
+<br>
+Comme <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img16.png" alt="$ u_n$">
+ est croissante, pour tout <!-- MATH
+ $n\geqslant p$
+ -->
+<img width="57" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img23.png" alt="$ n\geqslant p$">
+, 
+  on a alors <!-- MATH
+ $u_n\geqslant u_p=l+\alpha$
+ -->
+<img width="152" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img24.png" alt="$ u_n\geqslant u_p=l+\alpha$">
+. 
+
+</p><p>
+<br>
+D'autre part, comme <img width="44" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img1.png" alt="$ (u_n)$">
+ converge vers <img width="12" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img18.png" alt="$ l$">
+, tout intervalle
+  ouvert du type <!-- MATH
+ $]l-\varepsilon ;l+\varepsilon [$
+ -->
+<img width="112" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img25.png" alt="$ ]l-\varepsilon ;l+\varepsilon [$">
+, <!-- MATH
+ $\varepsilon >0$
+ -->
+<img width="54" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img26.png" alt="$ \varepsilon &gt;0$">
+, 
+  contient tous les termes <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img16.png" alt="$ u_n$">
+
+  à partir d'un certain rang. 
+
+</p><p>
+Comme cela est vrai pour tout réel <!-- MATH
+ $\varepsilon >0$
+ -->
+<img width="54" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img26.png" alt="$ \varepsilon &gt;0$">
+, on peut choisir par
+  exemple <!-- MATH
+ $\varepsilon =\alpha$
+ -->
+<img width="57" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img27.png" alt="$ \varepsilon =\alpha$">
+, et il existe donc un rang <img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img9.png" alt="$ n_0$">
+ à partir
+  duquel tous les termes <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img16.png" alt="$ u_n$">
+ sont dans l'intervalle 
+  <!-- MATH
+ $]l-\alpha;l+\alpha[$
+ -->
+<img width="120" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img28.png" alt="$ ]l-\alpha;l+\alpha[$">
+. 
+  En particulier, dès que <!-- MATH
+ $n\geqslant n_0$
+ -->
+<img width="68" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img10.png" alt="$ n\geqslant n_0$">
+, on a 
+  <!-- MATH
+ $u_n<l+\alpha$
+ -->
+<img width="102" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img29.png" alt="$ u_n&lt;l+\alpha$">
+. 
+
+</p><p>
+<br>
+Si maintenant <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img13.png" alt="$ N$">
+ désigne le plus grand des rangs <img width="27" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img9.png" alt="$ n_0$">
+ et <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img19.png" alt="$ p$">
+, 
+  on doit avoir, dès que <!-- MATH
+ $n\geqslant N$
+ -->
+<img width="66" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img14.png" alt="$ n\geqslant N$">
+ 
+  (c'est-à-dire, dès que <!-- MATH
+ $n\geqslant n_0$
+ -->
+<img width="68" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img10.png" alt="$ n\geqslant n_0$">
+ et <!-- MATH
+ $n\geqslant p$
+ -->
+<img width="57" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img23.png" alt="$ n\geqslant p$">
+), 
+  <!-- MATH
+ $u_n<l+\alpha$
+ -->
+<img width="102" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img29.png" alt="$ u_n&lt;l+\alpha$">
+ et <!-- MATH
+ $u_n>u_p=l+\alpha$
+ -->
+<img width="151" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img30.png" alt="$ u_n&gt;u_p=l+\alpha$">
+, 
+  ce qui est impossible. 
+
+</p><p>
+<br>
+Ainsi, l'hypothèse de départ: 
+  «il existe un rang <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img19.png" alt="$ p$">
+ pour lequel <img width="61" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img20.png" alt="$ u_p&gt;l$">
+»est fausse, 
+  et donc pour tout rang <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+, <!-- MATH
+ $u_n\leqslant l$
+ -->
+<img width="63" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img32.png" alt="$ u_n\leqslant l$">
+.  
+ 
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00020030000000000000"><span class="pt">Propriété</span></h4>
+Si <img width="55" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img33.png" alt="$ q&gt;1$">
+, alors 
+<img width="148" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img34.png" alt="$ \displaystyle \lim_{n\to+\infty} q^n=+\infty$">
+. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  <img width="55" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img33.png" alt="$ q&gt;1$">
+, alors il existe un réel <img width="58" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img21.png" alt="$ \alpha&gt;0$">
+ tel que 
+  <!-- MATH
+ $q=1+\alpha$
+ -->
+<img width="94" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img35.png" alt="$ q=1+\alpha$">
+. 
+
+</p><p>
+Alors <!-- MATH
+ $q^n=(1+\alpha)^n$
+ -->
+<img width="131" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img36.png" alt="$ q^n=(1+\alpha)^n$">
+. 
+
+</p><p>
+<br>
+Démontrons par récurrence que, pour tout entier naturel <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+,
+  <!-- MATH
+ $(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="174" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img37.png" alt="$ (1+\alpha)^n\geqslant 1+n\alpha$">
+.  
+
+</p><p>
+<br>
+  <u>Initialisation:</u> 
+  Pour <img width="57" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img38.png" alt="$ n=0$">
+, <!-- MATH
+ $(1+\alpha)^0=1$
+ -->
+<img width="120" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img39.png" alt="$ (1+\alpha)^0=1$">
+ et d'autre part 
+  <!-- MATH
+ $1+n\alpha=1$
+ -->
+<img width="107" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img40.png" alt="$ 1+n\alpha=1$">
+, et on a donc bien ainsi 
+  <!-- MATH
+ $(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="174" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img37.png" alt="$ (1+\alpha)^n\geqslant 1+n\alpha$">
+. 
+
+</p><p>
+<br>
+  <u>Hérédité:</u> 
+  Supoposons que pour un certain entier <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+, on ait 
+  <!-- MATH
+ $(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="174" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img37.png" alt="$ (1+\alpha)^n\geqslant 1+n\alpha$">
+. 
+
+</p><p>
+Alors, au rang <img width="55" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img41.png" alt="$ n+1$">
+, 
+
+</p><p>
+<!-- MATH
+ $(1+\alpha)^{n+1}=(1+\alpha)^n(1+\alpha)$
+ -->
+<img width="274" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img42.png" alt="$ (1+\alpha)^{n+1}=(1+\alpha)^n(1+\alpha)$">
+, 
+  or, d'après l'hypothèse de récurrence, 
+  <!-- MATH
+ $(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="174" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img37.png" alt="$ (1+\alpha)^n\geqslant 1+n\alpha$">
+, 
+  et ainsi, 
+
+</p><p>
+<!-- MATH
+ $(1+\alpha)^{n+1}=(1+\alpha)^n(1+\alpha)
+  \geqslant (1+n\alpha)(1+\alpha)
+  =1+(n+1)\alpha+n\alpha^2$
+ -->
+<img width="650" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img43.png" alt="$ (1+\alpha)^{n+1}=(1+\alpha)^n(1+\alpha)
+\geqslant (1+n\alpha)(1+\alpha)
+=1+(n+1)\alpha+n\alpha^2
+$">
+. 
+
+</p><p>
+De plus, pour tout entier <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+, <!-- MATH
+ $n\alpha^2\geqslant 0$
+ -->
+<img width="80" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img44.png" alt="$ n\alpha^2\geqslant 0$">
+, 
+  et donc, 
+  <!-- MATH
+ $1+(n+1)\alpha+n\alpha^2\geqslant 1+(n+1)\alpha$
+ -->
+<img width="327" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img45.png" alt="$ 1+(n+1)\alpha+n\alpha^2\geqslant 1+(n+1)\alpha$">
+. 
+
+</p><p>
+Ainsi, 
+  <!-- MATH
+ $(1+\alpha)^{n+1}\geqslant 1+(n+1)\alpha$
+ -->
+<img width="246" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img46.png" alt="$ (1+\alpha)^{n+1}\geqslant 1+(n+1)\alpha$">
+, 
+  ce qui montre que la propriété est encore vraie au rang <img width="55" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img41.png" alt="$ n+1$">
+. 
+
+</p><p>
+<br>
+  <u>Conclusion:</u> D'après le principe de récurrence, on a donc
+  démontré que, pour tout entier <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+, 
+  <!-- MATH
+ $(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="174" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img37.png" alt="$ (1+\alpha)^n\geqslant 1+n\alpha$">
+. 
+
+</p><p>
+<br>
+<br>
+On a donc, pour tout entier <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+, 
+  <!-- MATH
+ $q^n=(1+\alpha)^n\geqslant 1+n\alpha$
+ -->
+<img width="223" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img47.png" alt="$ q^n=(1+\alpha)^n\geqslant 1+n\alpha$">
+. 
+
+</p><p>
+Or, comme <img width="58" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img21.png" alt="$ \alpha&gt;0$">
+, on a 
+  <!-- MATH
+ $\displaystyle \lim_{n\to+\infty} 1+n\alpha=+\infty$
+ -->
+<img width="190" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img48.png" alt="$ \displaystyle \lim_{n\to+\infty} 1+n\alpha=+\infty$">
+, 
+  et alors, d'après le théorème de comparaison 
+  (corollaire du théorème des gendarmes), 
+  <!-- MATH
+ $\displaystyle \lim_{n\to+\infty} q^n=\lim_{n\to+\infty} (1+\alpha)^n=+\infty$
+ -->
+<img width="305" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img49.png" alt="$ \displaystyle \lim_{n\to+\infty} q^n=\lim_{n\to+\infty} (1+\alpha)^n=+\infty$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00020040000000000000"><span class="pt">Propriété</span></h4>
+Toute suite croissante non majorée tend vers <img width="43" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img50.png" alt="$ +\infty$">. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  Soit <img width="44" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img1.png" alt="$ (u_n)$">
+ une suite croissante et non majorée. 
+
+</p><p>
+Alors, comme <img width="44" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img1.png" alt="$ (u_n)$">
+ n'est pas majorée, 
+  pour tout réel <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$ A$">
+, il existe un rang <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img13.png" alt="$ N$">
+ tel que <img width="76" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img52.png" alt="$ u_N&gt;A$">
+. 
+
+</p><p>
+<br>
+De plus, <img width="44" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img1.png" alt="$ (u_n)$">
+ est croissante, et donc, 
+  pour tout rang <!-- MATH
+ $n\geqslant N$
+ -->
+<img width="66" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img14.png" alt="$ n\geqslant N$">
+, on a <!-- MATH
+ $u_n\geqslant u_N>A$
+ -->
+<img width="127" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img53.png" alt="$ u_n\geqslant u_N&gt;A$">
+. 
+
+</p><p>
+<br>
+Ceci étant vrai pour tout réel <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$ A$">
+, cela signifie exactement que
+  tout intervalle ouvert <!-- MATH
+ $]A;+\infty[$
+ -->
+<img width="80" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img6.png" alt="$ ]A;+\infty[$">
+ contient tous les termes 
+  <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img16.png" alt="$ u_n$">
+ à partir d'un certain rang <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img13.png" alt="$ N$">
+, et donc que 
+  <!-- MATH
+ $\displaystyle \lim_{n\to+\infty} u_n=+\infty$
+ -->
+<img width="149" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img5.png" alt="$ \displaystyle \lim_{n\to+\infty} u_n=+\infty$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+<br><br>
+</p><h2><a id="SECTION00030000000000000000">
+Fonction exponentielle</a>
+</h2>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00030010000000000000"><span class="pt">Propriété</span></h4>
+Il existe une unique fonction 
+<img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ dérivable sur 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ telle que 
+<img width="64" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img56.png" alt="$ f&#39;=f$">
+ et 
+<img width="84" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img57.png" alt="$ f(0)=1$">. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  <img width="16" height="20" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img58.png" alt="$ \bullet$">
+ <b>L'existence</b> d'une telle fonction est admise, 
+  conformément au programme. 
+
+</p><p>
+<br>
+  <img width="16" height="20" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img58.png" alt="$ \bullet$">
+ <b>Unicité:</b> 
+
+</p><p>
+Soit <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ et <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img59.png" alt="$ g$">
+ deux fonctions telles que 
+  <img width="64" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img56.png" alt="$ f&#39;=f$">
+ et <img width="84" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img57.png" alt="$ f(0)=1$">
+, <img width="61" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img60.png" alt="$ g&#39;=g$">
+ et <img width="82" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img61.png" alt="$ g(0)=1$">
+. 
+
+</p><p>
+<br>
+La fonction <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img59.png" alt="$ g$">
+ ne s'annule pas sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+. 
+  En effet, si on définit la fonction <img width="19" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img62.png" alt="$ \varphi $">
+ par 
+  <!-- MATH
+ $\varphi (x)=g(x)\times g(-x)$
+ -->
+<img width="198" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img63.png" alt="$ \varphi (x)=g(x)\times g(-x)$">
+, 
+  alors <img width="19" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img62.png" alt="$ \varphi $">
+ est dérivable sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ avec 
+  <!-- MATH
+ $\varphi '(x)=g'(x)\times g(-x)+ g(x)\times \left[-g'(x)\right]$
+ -->
+<img width="373" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img64.png" alt="$ \varphi &#39;(x)=g&#39;(x)\times g(-x)+ g(x)\times \left[-g&#39;(x)\right]$">
+, 
+  or <img width="61" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img60.png" alt="$ g&#39;=g$">
+, et donc, 
+  <!-- MATH
+ $\varphi '(x)=g(x)\times g(-x)-g(x)\times g(-x)=0$
+ -->
+<img width="390" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img65.png" alt="$ \varphi &#39;(x)=g(x)\times g(-x)-g(x)\times g(-x)=0$">
+. 
+
+</p><p>
+Ainsi, <img width="19" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img62.png" alt="$ \varphi $">
+ est constante, 
+  or <!-- MATH
+ $\varphi (0)=g(0)\times g(-0)=\left[g(0)\right]^2=1$
+ -->
+<img width="319" height="49" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img66.png" alt="$ \varphi (0)=g(0)\times g(-0)=\left[g(0)\right]^2=1$">
+, et donc, 
+  pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, <!-- MATH
+ $\varphi (x)=g(x)\times g(-x)=1$
+ -->
+<img width="237" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img68.png" alt="$ \varphi (x)=g(x)\times g(-x)=1$">
+. 
+
+</p><p>
+En particulier, il ne peut exister de réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+ tel que 
+  <img width="84" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img69.png" alt="$ g(x)=0$">
+ (car on aurait alors 
+  <!-- MATH
+ $\varphi (x)=g(x)\times g(-x)=0\not=1$
+ -->
+<img width="276" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img70.png" alt="$ \varphi (x)=g(x)\times g(-x)=0\not=1$">
+). 
+
+</p><p>
+<br>
+<br>
+On peut alors définir la fonction 
+  <!-- MATH
+ $h=\dfrac{f}{g}$
+ -->
+<img width="63" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img71.png" alt="$ h=\dfrac{f}{g}$">
+, qui est bien définie et dérivable sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ car <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img59.png" alt="$ g$">
+
+  ne s'annule pas. 
+
+</p><p>
+De plus, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+h'=\dfrac{f'g-fg'}{g^2}=\dfrac{fg-fg}{g^2}=0\ ,\ 
+  \text{ car } f'=f \text{ et } g'=g\ .
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="304" height="70" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img72.png" alt="$\displaystyle h&#39;=\dfrac{f&#39;g-fg&#39;}{g^2}=\dfrac{fg-fg}{g^2}=0\ ,\ $">&nbsp; &nbsp; car&nbsp;<img width="64" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img73.png" alt="$\displaystyle f&#39;=f$">&nbsp; &nbsp; et&nbsp;<img width="74" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img74.png" alt="$\displaystyle g&#39;=g\ .
+$">
+</div><p>
+</p>
+Ainsi, <img width="18" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img75.png" alt="$ h$">
+ est constante sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+, 
+  avec <!-- MATH
+ $h(0)=\dfrac{f(0)}{g(0)}=\dfrac{1}{1}=1$
+ -->
+<img width="199" height="71" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img76.png" alt="$ h(0)=\dfrac{f(0)}{g(0)}=\dfrac{1}{1}=1$">
+, 
+  d'où, pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, 
+  <!-- MATH
+ $h(x)=\dfrac{f(x)}{g(x)}=1 
+  \iff f(x)=g(x)$
+ -->
+<img width="331" height="71" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img77.png" alt="$ h(x)=\dfrac{f(x)}{g(x)}=1
+\iff f(x)=g(x)$">
+. 
+
+<p>
+On a donc <img width="57" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img78.png" alt="$ f=g$">
+: il n'exsite qu'une unique fonction <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ vérifiant 
+  <img width="64" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img56.png" alt="$ f&#39;=f$">
+ et <img width="84" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img57.png" alt="$ f(0)=1$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00030020000000000000"><span class="pt">Propriété</span></h4>
+<img width="147" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img79.png" alt="$ \displaystyle \lim_{n\to+\infty} e^x=+\infty$">
+et   
+<img width="119" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img80.png" alt="$ \displaystyle \lim_{n\to-\infty} e^x=0$">.
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  On démontre pour cela que, pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, <img width="65" height="38" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img81.png" alt="$ e^x&gt;x$">
+. 
+
+</p><p>
+<br>
+Soit la fonction <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ définie sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ par <!-- MATH
+ $f(x)=e^x-x$
+ -->
+<img width="133" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img82.png" alt="$ f(x)=e^x-x$">
+. 
+
+</p><p>
+Alors, <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ est dérivable sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ avec 
+  <!-- MATH
+ $f'(x)=e^x-1$
+ -->
+<img width="136" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img83.png" alt="$ f&#39;(x)=e^x-1$">
+, 
+  et 
+</p><ul> 
+<li><img width="533" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img84.png" alt="$ f&#39;(x)&gt;0\iff e^x-1&gt;0\iff e^x&gt;1=e^0\iff x&gt;0$">
+, car la fonction exponentielle est strictement croissantee sur 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">. 
+  
+</li>
+<li>De même, 
+<img width="533" height="44" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img85.png" alt="$f&#39;(x)&lt;0\iff e^x-1&lt;0\iff e^x&lt;1=e^0\iff x&lt;0$">
+, car la fonction exponentielle est strictement croissantee sur 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="${\rm I\kern-.1567em R}$">. 
+  
+</li>
+</ul>
+
+<p>
+On peut ainsi dresser le tableau de variation de <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+: 
+  </p><p><!-- MATH
+ \begin{displaymath}
+\begin{tabular}{|c|ccccc|}\hline
+    $x$\  & $-\infty$\  &\hspace*{0.4cm}& $0$\  &\hspace*{0.4cm}& $+\infty$\  \\\hline
+    $f'(x)$\  && $-$\  & \mbox{$0\hspace{-0.67em}\mid$}& $+$\  & \\\hline
+    &&&&& \\
+    $f$\  &&\psline{->}(-0.6,0.5)(0.5,-0.4)&&
+    \psline{->}(-0.6,-0.4)(0.5,0.5)& \\
+    &&&1&& \\\hline
+  \end{tabular}
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="309" height="154" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img86.png" alt="$\displaystyle \begin{tabular}{\vert c\vert ccccc\vert}\hline
+$x$\ &amp; $-\infty$\...
+...-0.4)&amp;&amp;
+\psline{-&gt;}(-0.6,-0.4)(0.5,0.5)&amp; \\
+&amp;&amp;&amp;1&amp;&amp; \\ \hline
+\end{tabular} $">
+</div><p>
+</p>
+
+<p>
+On en déduit que <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img87.png" alt="$ 1$">
+ est le minimum global de <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+, et donc
+  que, pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, <!-- MATH
+ $f(x)=e^x-x\geqslant 1$
+ -->
+<img width="172" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img88.png" alt="$ f(x)=e^x-x\geqslant 1$">
+. 
+
+</p><p>
+En particulier, pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, <!-- MATH
+ $f(x)e^x-x>0 \iff e^x>x$
+ -->
+<img width="267" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img89.png" alt="$ f(x)e^x-x&gt;0 \iff e^x&gt;x$">
+. 
+
+</p><p>
+<br>
+Comme <!-- MATH
+ $\displaystyle \lim_{x\to+\infty} x=+\infty$
+ -->
+<img width="139" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img90.png" alt="$ \displaystyle \lim_{x\to+\infty} x=+\infty$">
+, on a donc, d'après le
+  théorème de comparaison (corollaire du théorème des gendarmes), 
+  <!-- MATH
+ $\displaystyle \lim_{x\to+\infty} e^x=+\infty$
+ -->
+<img width="146" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img91.png" alt="$ \displaystyle \lim_{x\to+\infty} e^x=+\infty$">
+.
+
+</p><p>
+<br>
+<br>
+Pour la limite de la fonction exponentielle en <img width="44" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img92.png" alt="$ -\infty$">
+, on utilise
+  alors le fait que, pour tout réel <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img67.png" alt="$ x$">
+, 
+  <!-- MATH
+ $e^{-x}=\dfrac{1}{e^x}$
+ -->
+<img width="89" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img93.png" alt="$ e^{-x}=\dfrac{1}{e^x}$">
+. 
+
+</p><p>
+Ainsi, si on pose <img width="82" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img94.png" alt="$ X=-x$">
+, on a: 
+  <!-- MATH
+ $\displaystyle 
+  \lim_{x\to-\infty} e^x
+  =\lim_{X\to+\infty} e^{-X}
+  =\lim_{X\to+\infty} \dfrac{1}{e^X}
+  =0$
+ -->
+<img width="360" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img95.png" alt="$ \displaystyle
+\lim_{x\to-\infty} e^x
+=\lim_{X\to+\infty} e^{-X}
+=\lim_{X\to+\infty} \dfrac{1}{e^X}
+=0
+$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+<br><br>
+</p><h2><a id="SECTION00040000000000000000">
+Intégration</a>
+</h2>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00040010000000000000"><span class="pt">Propriété</span></h4>
+Soit 
+<img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$f$">
+une fonction continue et positive sur <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$[a;b]$">. 
+<p>
+<br>
+La fonction 
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+définie sur 
+<img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+par 
+<img width="173" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img98.png" alt="$\displaystyle F(x)=\int_a^x f(t)\,dt$">
+est dérivable sur 
+<img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$[a;b]$">
+ et a pour
+  dérivée 
+<img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">. 
+</p></div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  On démontre cette propriété dans le cas où <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ est une fonction
+  continue, positive et <b>croissante</b> sur <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+ 
+  (conformément au programme, le cas général étant admis). 
+
+</p><p>
+<br>
+Soit <img width="26" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img99.png" alt="$ x_0$">
+ un réel de <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+ et <img width="57" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img100.png" alt="$ h&gt;0$">
+ tel que 
+  <!-- MATH
+ $x_0+h\in[a;b]$
+ -->
+<img width="132" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img101.png" alt="$ x_0+h\in[a;b]$">
+. 
+
+</p><p>
+On a, d'après la relation de Chasles pour les intégrales: 
+</p><div class="ct">
+<img width="873" height="77" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img102.png" alt="$\displaystyle F(x_0+h)-F(x_0)
+=\int_a^{x_0+h} f(t)\,dt - \int_a^{x_0} f(t)\,dt
+=\int_a^{x_0+h} f(t)\,dt + \int_{x_0}^a f(t)\,dt
+=\int_{x_0}^{x_0+h} f(t)\,dt
+$">
+</div><p>
+</p>
+
+<p>
+<img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ étant croissante sur <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+, on a l'encadrement: 
+  </p><p><!-- MATH
+ \begin{displaymath}
+\left(x_0+h-x_0\right)f(x_0)
+  \leqslant
+  \int_{x_0}^{x_0+h} f(t)\,dt
+  \leqslant
+  \left(x_0+h-x_0\right)f(x_0+h)
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="574" height="77" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img103.png" alt="$\displaystyle \left(x_0+h-x_0\right)f(x_0)
+\leqslant
+\int_{x_0}^{x_0+h} f(t)\,dt
+\leqslant
+\left(x_0+h-x_0\right)f(x_0+h)
+$">
+</div><p>
+</p>
+soit, 
+  <p><!-- MATH
+ \begin{displaymath}
+h f(x_0)\leqslant \int_{x_0}^{x_0+h} f(t)\,dt \leqslant hf(x_0+h)
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="347" height="77" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img104.png" alt="$\displaystyle h f(x_0)\leqslant \int_{x_0}^{x_0+h} f(t)\,dt \leqslant hf(x_0+h)
+$">
+</div><p>
+</p>
+ou encore, en divisant par <img width="57" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img100.png" alt="$ h&gt;0$">
+, 
+  <p><!-- MATH
+ \begin{displaymath}
+f(x_0)\leqslant \dfrac{\displaystyle \int_{x_0}^{x_0+h} f(t)\,dt}{h} \leqslant f(x_0+h)
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="327" height="137" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img105.png" alt="$\displaystyle f(x_0)\leqslant \dfrac{\displaystyle \int_{x_0}^{x_0+h} f(t)\,dt}{h} \leqslant f(x_0+h)
+$">
+</div><p>
+</p>
+soit encore, puisque 
+  <!-- MATH
+ $\displaystyle 
+  F(x_0+h)-F(x_0)
+  =\int_{x_0}^{x_0+h} f(t)\,dt$
+ -->
+<img width="328" height="77" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img106.png" alt="$ \displaystyle
+F(x_0+h)-F(x_0)
+=\int_{x_0}^{x_0+h} f(t)\,dt
+$">
+, 
+  <p><!-- MATH
+ \begin{displaymath}
+f(x_0)\leqslant \dfrac{F(x_0+h)-F(x_0)}{h}\leqslant f(x_0+h)
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="377" height="71" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img107.png" alt="$\displaystyle f(x_0)\leqslant \dfrac{F(x_0+h)-F(x_0)}{h}\leqslant f(x_0+h)
+$">
+</div><p>
+</p>
+
+<p>
+En procédant de même pour <img width="57" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img108.png" alt="$ h&lt;0$">
+, on obtient que  
+  <!-- MATH
+ $\displaystyle 
+  f(x_0+h)\leqslant \dfrac{F(x_0+h)-F(x_0)}{h}\leqslant f(x_0)$
+ -->
+<img width="377" height="71" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img109.png" alt="$ \displaystyle
+f(x_0+h)\leqslant \dfrac{F(x_0+h)-F(x_0)}{h}\leqslant f(x_0)
+$">
+.
+
+</p><p>
+<br>
+<br>
+Comme <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ est continue sur <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+, donc en particulier en <img width="26" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img99.png" alt="$ x_0$">
+, 
+  on a 
+  <!-- MATH
+ $\displaystyle \lim_{h\to0} f(x_0+h)=f(x_0)$
+ -->
+<img width="207" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img110.png" alt="$ \displaystyle \lim_{h\to0} f(x_0+h)=f(x_0)$">
+, et donc, 
+  d'après le théorème des gendarmes, 
+  <!-- MATH
+ $\displaystyle \lim_{h\to0} \dfrac{F(x_0+h)-F(x_0)}{h}=f(x_0)$
+ -->
+<img width="295" height="71" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img111.png" alt="$ \displaystyle \lim_{h\to0} \dfrac{F(x_0+h)-F(x_0)}{h}=f(x_0)$">
+. 
+
+</p><p>
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+ est donc dérivable en <img width="26" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img99.png" alt="$ x_0$">
+, avec <!-- MATH
+ $F'(x_0)=f(x_0)$
+ -->
+<img width="142" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img112.png" alt="$ F&#39;(x_0)=f(x_0)$">
+. 
+
+</p><p>
+Ceci étant vrai pour tout <!-- MATH
+ $x_0\in[a;b]$
+ -->
+<img width="94" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img113.png" alt="$ x_0\in[a;b]$">
+, on en déduit que 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+ est dérivable sur <img width="47" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img96.png" alt="$ [a;b]$">
+ et que <img width="68" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img114.png" alt="$ F&#39;=f$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00040020000000000000"><span class="pt">Propriété</span></h4>
+Toute fonction continue sur un intervalle 
+<img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+admet des primitives sur 
+<img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  On se place dans le cas où <img width="86" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img116.png" alt="$ I=[a;b]$">
+ et <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ admet un minimum <img width="24" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img117.png" alt="$ m$">
+ sur
+  <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+. 
+
+</p><p>
+<br>
+La fonction <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img59.png" alt="$ g$">
+ définie sur <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+ par <!-- MATH
+ $g(x)=f(x)-m$
+ -->
+<img width="159" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img118.png" alt="$ g(x)=f(x)-m$">
+ est donc continue
+  et positive sur <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+. 
+
+</p><p>
+Elle admet donc une primitive <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img119.png" alt="$ G$">
+ sur <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+ 
+  (donnée par <!-- MATH
+ $\displaystyle G(x)=\int_a^x g(t)\,dt$
+ -->
+<img width="171" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img120.png" alt="$ \displaystyle G(x)=\int_a^x g(t)\,dt$">
+.) 
+
+</p><p>
+<br>
+La fonction <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+ définie par <!-- MATH
+ $F(x)=G(x)-mx$
+ -->
+<img width="181" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img121.png" alt="$ F(x)=G(x)-mx$">
+ et alors une primitive de
+  <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ car, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+F'(x)=G'(x)-m=g(x)-m=f(x)\ ,
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="374" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img122.png" alt="$\displaystyle F&#39;(x)=G&#39;(x)-m=g(x)-m=f(x)\ ,$">
+</div><p>
+</p>
+ce qui montre que <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ admet bien des primitives sur <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+<p>
+
+<br><br>
+</p><h2><a id="SECTION00050000000000000000">
+Géométrie vectorielle dans l'espace</a>
+</h2>
+
+<p>
+Le théorème dit du "toit" permet de démontrer que des droites dans
+l'espace sont parallèles ou concourantes en un point. 
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00050010000000000000"><span class="pt">Propriété</span></h4>
+<b><i>Théorème «du toit»)</i></b>
+Si trois plans 
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$ P$">, 
+<img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$ Q$"> et 
+<img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+de l'espace sont sécants deux à deux, 
+alors les trois droites d'intersection sont concourantes ou
+parallèles. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  On note 
+<img width="111" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img126.png" alt="$d_1=P\cap Q$">
+ la droite intersection des plans <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$P$">
+ et <img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$ Q$">
+, <img width="110" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img127.png" alt="$ d_2=Q\cap R$">
+ la droite intersection des plans <img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$ Q$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+, et 
+<img width="110" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img128.png" alt="$d_3=P\cap R$">
+ la droite intersection des plans <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$P$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$R$">.
+
+</p><p>
+Considérons, par exemple, dans un premier temps, les droites 
+<img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$d_1$">
+et
+<img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">.  
+Comme ces deux droites sont coplanaires (elles appartiennent au même plan 
+<img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$Q$">), 
+seulement deux cas sont possibles: les droites 
+<img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et 
+<img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+sont sécantes ou bien elles sont parallèles 
+(si ces deux droites n'étaient pas coplanaires, elles pourraient aussi n'être ni sécantes, ni parallèles). 
+
+</p><p>
+</p><dl>
+<dt><u>1<!-- MATH
+ $^{\text{er}}$
+ -->
+<img width="19" height="20" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img131.png" alt="$ ^{\text{er}}$">
+ Cas:</u></dt>
+<dd>Supposons <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+ sécantes. 
+
+<br>
+<img class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img132.png" alt="\begin{pspicture}(-3,-1.5)(7,4.5)
+	\psplot{-3}{7}{0.25 x mul -0.5 add}\rput(-3,-...
+	...
+	(0,-0.5)(-0.66,3.22)(4.2,1.6)(4.5,0.625)
+	%
+	\rput(6,1.2){$I$}
+	\end{pspicture}">
+<br>
+
+<p>
+Soit <!-- MATH
+ $I=d_1\cap d_2$
+ -->
+<img width="108" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img133.png" alt="$ I=d_1\cap d_2$">
+ le point d'intersection des deux droites
+    <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+. 
+
+</p><p>
+On a alors, 
+    <img width="62" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img134.png" alt="$ I\in d_1$">
+, donc <img width="59" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img135.png" alt="$ I\in P$">
+, car <!-- MATH
+ $d_1\subset P$
+ -->
+<img width="70" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img136.png" alt="$ d_1\subset P$">
+, 
+    et de même, 
+    <img width="62" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img137.png" alt="$ I\in d_2$">
+, donc <img width="59" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img138.png" alt="$ I\in R$">
+, car <!-- MATH
+ $d_2\subset R$
+ -->
+<img width="70" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img139.png" alt="$ d_2\subset R$">
+. 
+
+</p><p>
+Ainsi, <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+ est un point commun aux plans <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$ P$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+, 
+    soit <!-- MATH
+ $I\in P\cap R$
+ -->
+<img width="100" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img140.png" alt="$ I\in P\cap R$">
+. 
+
+</p><p>
+Par conséquent, <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+ appartient aussi à la droite <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img141.png" alt="$ d_3$">
+ qui est
+    l'intersection des plans <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$ P$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+. 
+
+</p><p>
+On en conclut donc que le point <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+ appartient à la fois aux trois
+    droites <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+, <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img141.png" alt="$ d_3$">
+, et donc que ces trois droites sont
+    bien concourantes en <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img115.png" alt="$ I$">
+. 
+
+</p><p>
+<br>
+<br>
+  
+</p></dd>
+<dt><u>2<!-- MATH
+ $^{\text{e}}$
+ -->
+<img width="13" height="20" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img142.png" alt="$ ^{\text{e}}$">
+ Cas:</u></dt>
+<dd>Supposons <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+ parallèles. 
+
+
+<br>
+<img class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img143.png" alt="\begin{pspicture}(-4,-0.5)(7,4)
+\psline(-4,1)(7,1)\rput(-3.5,1.2){$d_1$}
+\psli...
+...=red](0,0)(-1,3)(5,3)(6,0)
+\rput(0.2,0.2){\textcolor{red}{$R$}}
+\end{pspicture}">
+<br>
+
+<p>
+Raisonnons par l'absurde et supposons que les droites <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et
+    <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img141.png" alt="$ d_3$">
+ sont sécantes en un point <img width="19" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img144.png" alt="$ J$">
+. 
+
+</p><p>
+On aurait alors, <img width="65" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img145.png" alt="$ J\in d_1$">
+, donc <img width="62" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img146.png" alt="$ J\in Q$">
+, 
+    et de même, 
+    <img width="65" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img147.png" alt="$ J\in d_3$">
+, donc <img width="62" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img148.png" alt="$ J\in R$">
+. 
+
+</p><p>
+Ainsi, <img width="19" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img144.png" alt="$ J$">
+ appartiendrait à la fois aux plans <img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$ Q$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+, et donc à la
+    droite <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+, intersections de <img width="22" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img124.png" alt="$ Q$">
+ et <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img125.png" alt="$ R$">
+. 
+
+</p><p>
+Le point appartiendrait alors aux droites <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+, 
+    ce qui contredit notre hypothèse: 
+    <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+ sont parallèles. 
+
+</p><p>
+Les droites <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img141.png" alt="$ d_3$">
+ ne peuvent donc pas être sécantes et,
+    comme elles appartiennent au même plan <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img123.png" alt="$ P$">
+, elles sont donc
+    parallèles. 
+
+</p><p>
+<br>
+Par conséquent, on en conclut que les trois droites <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img129.png" alt="$ d_1$">
+,
+    <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img130.png" alt="$ d_2$">
+ et <img width="25" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img141.png" alt="$ d_3$">
+ sont parallèles. 
+  
+</p></dd>
+</dl>
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+<p>
+
+<br><br>
+</p><h2><a id="SECTION00060000000000000000">
+Produit scalaire dans l'espace</a>
+</h2>
+
+<p>
+L'espace est muni d'un repère orthonormé. 
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00060010000000000000"><span class="pt">Propriété</span></h4>
+<dl>
+<dt>(1)</dt>
+<dd>Un plan de l'espace de vecteur normal 
+<img width="86" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img149.png" alt="$ \vec{n}\left(a;b;c\right)$">
+ a une équation cartésienne de la forme 
+<img width="197" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img150.png" alt="$ ax+by+cz+d=0$">. 
+  
+</dd>
+<dt>(2)</dt>
+<dd>Réciproquement, <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img151.png" alt="$ a$">
+, <img width="14" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img152.png" alt="$ b$">
+, <img width="15" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img153.png" alt="$ c$">
+ et <img width="16" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img154.png" alt="$ d$">
+ étant quatre nombres, 
+    <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img151.png" alt="$ a$">
+, <img width="14" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img152.png" alt="$ b$">
+ et <img width="15" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img153.png" alt="$ c$">
+ étant non tous nuls, 
+    l'ensemble des points <img width="97" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img155.png" alt="$ M(x;y;z)$">
+ tels que 
+<img width="197" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img150.png" alt="$ ax+by+cz+d=0$">
+ est un plan de vecteur normal 
+<img width="86" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img149.png" alt="$ \vec{n}\left(a;b;c\right)$">.
+</dd>
+</dl>
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  <b>(1)</b> Un point <img width="97" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img155.png" alt="$ M(x;y;z)$">
+ appartient au plan <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+
+  passant par <!-- MATH
+ $A(x_A;y_A;z_A)$
+ -->
+<img width="126" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img157.png" alt="$ A(x_A;y_A;z_A)$">
+ si, et seulement, 
+  <!-- MATH
+ $\overrightarrow{AM}\cdot\vec{n}=0
+  \iff
+  a(x-x_A)+b(x-x_B)+c(x-x_D)=0
+  \iff 
+  ax+by+c+d=0$
+ -->
+<img width="776" height="55" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img158.png" alt="$ \overrightarrow{AM}\cdot\vec{n}=0
+\iff
+a(x-x_A)+b(x-x_B)+c(x-x_D)=0
+\iff
+ax+by+c+d=0
+$">
+, 
+  où on a posé <!-- MATH
+ $d=-ax_A-by_A-cz_A$
+ -->
+<img width="213" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img159.png" alt="$ d=-ax_A-by_A-cz_A$">
+.
+
+</p><p>
+<br>
+<br>
+  <b>(2)</b> Soit <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+ l'ensemble des points 
+  <img width="97" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img155.png" alt="$ M(x;y;z)$">
+ tels que <!-- MATH
+ $ax+by+cz+d=0$
+ -->
+<img width="197" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img150.png" alt="$ ax+by+cz+d=0$">
+. 
+
+</p><p>
+Les réels <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img151.png" alt="$ a$">
+, <img width="14" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img152.png" alt="$ b$">
+ et <img width="15" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img153.png" alt="$ c$">
+ étant non tous nuls, on peut supposer que,
+  par exemple, <img width="56" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img160.png" alt="$ a\not=0$">
+. 
+
+</p><p>
+Alors, le point <!-- MATH
+ $A\left(-\dfrac{d}{a};0;0\right)$
+ -->
+<img width="129" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img161.png" alt="$ A\left(-\dfrac{d}{a};0;0\right)$">
+ est un point de
+  l'ensemble <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+, car 
+  <!-- MATH
+ $a\left(-\dfrac{d}{a}\right)+b\times 0+c\times 0+d=0$
+ -->
+<img width="304" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img162.png" alt="$ a\left(-\dfrac{d}{a}\right)+b\times 0+c\times 0+d=0$">
+. 
+
+</p><p>
+On a de plus alors, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+ax+by+cz+d=0
+  \iff
+  a\left(x+\dfrac{d}{a}\right)+by+cz=0
+  \iff
+  \overrightarrow{AM}\cdot\vec{n}=0
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="658" height="73" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img163.png" alt="$\displaystyle ax+by+cz+d=0
+\iff
+a\left(x+\dfrac{d}{a}\right)+by+cz=0
+\iff
+\overrightarrow{AM}\cdot\vec{n}=0
+$">
+</div><p>
+</p>
+avec le vecteur <!-- MATH
+ $\vec{n}(a;b;c)$
+ -->
+<img width="83" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img164.png" alt="$ \vec{n}(a;b;c)$">
+. 
+
+<p>
+Ainsi, <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+ est le plan passant par <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$ A$">
+ et de vecteur
+  normal <img width="18" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img165.png" alt="$ \vec{n}$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00060020000000000000"><span class="pt">Propriété</span></h4>
+Une droite 
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$ \mathcal{D}$">
+ est orthogonale à toute droite d'un  plan 
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+ si et seulement si elle est orthogonale à deux droites
+  sécantes de ce plan. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  <b><u>Condition nécessaire.</u></b> 
+  Si la droite 
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$ \mathcal{D}$">
+ est orthogonale à toute droite du plan
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+ alors elle l'est en particulier à deux droites
+  quelconques du plan 
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+ 
+(sécantes ou non d'ailleurs). 
+
+</p><p>
+<br>
+<br>
+  <b><u>Condition suffisante.</u></b> 
+  Supposons, réciproquement, que la droite 
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$\mathcal{D}$">
+ soit
+  orthogonale à deux droites sécantes <!-- MATH
+ $\mathcal{D}_1$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img167.png" alt="$ \mathcal{D}_1$">
+ et 
+  <!-- MATH
+ $\mathcal{D}_2$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img168.png" alt="$ \mathcal{D}_2$">
+ du plan <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+. 
+
+</p><p>
+On considère alors une droite <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img169.png" alt="$ \Delta$">
+ quelconque du plan
+  <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+. 
+
+</p><p>
+<br>
+Soit <img width="17" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img170.png" alt="$ \vec{u}$">
+, <img width="26" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img171.png" alt="$ \vec{u}_1$">
+, <img width="26" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img172.png" alt="$ \vec{u}_2$">
+ et <img width="16" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img173.png" alt="$ \vec{v}$">
+ des vecteurs
+  directeurs respectifs des droites 
+  <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img169.png" alt="$ \Delta$">
+, <!-- MATH
+ $\mathcal{D}_1$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img167.png" alt="$ \mathcal{D}_1$">
+, <!-- MATH
+ $\mathcal{D}_2$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img168.png" alt="$ \mathcal{D}_2$">
+ et <!-- MATH
+ $\mathcal{D}$
+ -->
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$ \mathcal{D}$">
+. 
+
+</p><p>
+Le couple <!-- MATH
+ $\left(\vec{u}_1;\vec{u}_2\right)$
+ -->
+<img width="72" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img174.png" alt="$ \left(\vec{u}_1;\vec{u}_2\right)$">
+ dirige le plan <!-- MATH
+ $\mathcal{P}$
+ -->
+<img width="22" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img156.png" alt="$ \mathcal{P}$">
+,
+  et donc, il existe deux réels <img width="19" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img175.png" alt="$ \alpha$">
+ et <img width="19" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img176.png" alt="$ \beta$">
+ tels que 
+  <!-- MATH
+ $\vec{u}=\alpha\vec{u}_1+\beta\vec{u}_2$
+ -->
+<img width="140" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img177.png" alt="$ \vec{u}=\alpha\vec{u}_1+\beta\vec{u}_2$">
+. 
+
+</p><p>
+De plus, comme <!-- MATH
+ $\mathcal{D}$
+ -->
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$ \mathcal{D}$">
+ est orthogonale à 
+  <!-- MATH
+ $\mathcal{D}_1$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img167.png" alt="$ \mathcal{D}_1$">
+ et <!-- MATH
+ $\mathcal{D}_2$
+ -->
+<img width="31" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img168.png" alt="$ \mathcal{D}_2$">
+, on a 
+  <!-- MATH
+ $\vec{v}\cdot\vec{u}_1=\vec{v}\cdot\vec{u}_2=0$
+ -->
+<img width="167" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img178.png" alt="$ \vec{v}\cdot\vec{u}_1=\vec{v}\cdot\vec{u}_2=0$">
+, 
+  et alors 
+  </p><p><!-- MATH
+ \begin{displaymath}
+\vec{v}\cdot\vec{u}
+  =\vec{v}\cdot\left(\alpha\vec{u}_1+\beta\vec{u}_2\right)
+  =\alpha\vec{v}\cdot\vec{u}_1+\beta\vec{v}\cdot\vec{u}_2
+  =0
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="424" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img179.png" alt="$\displaystyle \vec{v}\cdot\vec{u}
+=\vec{v}\cdot\left(\alpha\vec{u}_1+\beta\vec{u}_2\right)
+=\alpha\vec{v}\cdot\vec{u}_1+\beta\vec{v}\cdot\vec{u}_2
+=0
+$">
+</div><p>
+</p>
+ce qui montre la droite <!-- MATH
+ $\mathcal{D}$
+ -->
+<img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img166.png" alt="$ \mathcal{D}$">
+ est orthogonale à la droite 
+  <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img169.png" alt="$ \Delta$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+<p>
+
+<br><br>
+</p><h2><a id="SECTION00070000000000000000">
+Probabilités</a>
+</h2>
+
+<p>
+
+<br>
+</p><h3><a id="SECTION00071000000000000000">
+Conditionnement, indépendance</a>
+</h3>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00071010000000000000"><span class="pt">Propriété</span></h4>
+Si deux événements <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$A$">
+et <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt="$B$">
+sont indépendants, alors il en est de même pour les événements 
+<img width="21" height="23" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img181.png" alt="$ \overline{A}$">
+ et <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt=" B$">. 
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  Soit <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$ A$">
+ et <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt="$ B$">
+ deux événements indépendants. 
+
+</p><p>
+<br>
+  <img width="62" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img182.png" alt="$ A\cap B$">
+ et <!-- MATH
+ $\overline{A}\cap B$
+ -->
+<img width="62" height="23" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img183.png" alt="$ \overline{A}\cap B$">
+ forment une partition de <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt="$ B$">
+, et
+  donc, 
+  <!-- MATH
+ $P(B)=P(A\cap B)+P(\overline{A}\cap B)$
+ -->
+<img width="290" height="48" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img184.png" alt="$ P(B)=P(A\cap B)+P(\overline{A}\cap B)$">
+, 
+  soit 
+  <!-- MATH
+ $P(\overline{A}\cap B)=P(B)-P(A\cap B)$
+ -->
+<img width="290" height="48" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img185.png" alt="$ P(\overline{A}\cap B)=P(B)-P(A\cap B)$">
+.
+
+</p><p>
+Or, <img width="21" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img51.png" alt="$ A$">
+ et <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt="$ B$">
+ étant indépendants, 
+  on a <!-- MATH
+ $P(A\cap B)=P(A)\times P(B)$
+ -->
+<img width="249" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img186.png" alt="$ P(A\cap B)=P(A)\times P(B)$">
+, 
+  et donc, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+P(\overline{A}\cap B)
+  =P(B)-P(A\cap B)
+  =P(B)-P(A)\times P(B)
+  =P(B)\Bigl( 1-P(A)\Bigr)
+  =P(B)\times P(\overline{A})
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="861" height="60" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img187.png" alt="$\displaystyle P(\overline{A}\cap B)
+=P(B)-P(A\cap B)
+=P(B)-P(A)\times P(B)
+=P(B)\Bigl( 1-P(A)\Bigr)
+=P(B)\times P(\overline{A})
+$">
+</div><p>
+</p>
+ce qui montre que les événements <!-- MATH
+ $\overline{A}$
+ -->
+<img width="21" height="23" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img181.png" alt="$ \overline{A}$">
+ et <img width="23" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img180.png" alt="$ B$">
+ sont
+  indépendants. 
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+<p>
+
+<br>
+</p><h3><a id="SECTION00072000000000000000">
+Probabilités continues</a>
+</h3>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00072010000000000000"><span class="pt">Propriété</span></h4>
+L'espérance d'une variable aléatoire <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$X$">
+suivant la loi exponentielle de paramètre 
+<img width="18" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img189.png" alt="$ \lambda $">
+est
+<img width="103" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img190.png" alt="$ E(X)=\dfrac{1}{\lambda }$">.
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  Soit <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$ X$">
+ une variable aléatoire suivant la loi exponentielle de
+  paramètre <img width="18" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img189.png" alt="$ \lambda $">
+, 
+  alors la densité de probabilité de <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$ X$">
+ est 
+  la fonction définie sur <!-- MATH
+ $[0;+\infty[$
+ -->
+<img width="75" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img191.png" alt="$ [0;+\infty[$">
+ par 
+  <!-- MATH
+ $f(x)=\lambda e^{-\lambda x}$
+ -->
+<img width="127" height="45" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img192.png" alt="$ f(x)=\lambda e^{-\lambda x}$">
+. 
+
+</p><p>
+<br>
+L'espérance de <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$ X$">
+ est alors 
+  </p><p><!-- MATH
+ \begin{displaymath}
+E(x)
+  =\lim_{x\to+\infty}\int_0^{x} t\,f(t)\,dt
+  =\lim_{x\to+\infty}\int_0^{x} t\,\lambda e^{-\lambda t}\,dt
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="439" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img193.png" alt="$\displaystyle E(x)
+=\lim_{x\to+\infty}\int_0^{x} t\,f(t)\,dt
+=\lim_{x\to+\infty}\int_0^{x} t\,\lambda e^{-\lambda t}\,dt
+$">
+</div><p>
+</p>
+Pour calculer cette intégrale, on peut chercher une primitive de 
+  <!-- MATH
+ $g(t)=\lambda te^{-\lambda t}$
+ -->
+<img width="126" height="45" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img194.png" alt="$ g(t)=\lambda te^{-\lambda t}$">
+ sous la forme 
+  <!-- MATH
+ $G(t)=(at+b)e^{-\lambda t}$
+ -->
+<img width="182" height="45" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img195.png" alt="$ G(t)=(at+b)e^{-\lambda t}$">
+, où <img width="17" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img151.png" alt="$ a$">
+ et <img width="14" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img152.png" alt="$ b$">
+ sont des nombres réels à
+  déterminer. 
+
+<p>
+<br>
+On a alors, 
+  <!-- MATH
+ $G'(t)=ae^{-\lambda t}+(at+b)\left(-\lambda e^{-\lambda t}\right)
+  =\Bigl( -\lambda at +\left(a-\lambda b\right)\Bigr) e^{-\lambda t}$
+ -->
+<img width="554" height="59" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img196.png" alt="$ G&#39;(t)=ae^{-\lambda t}+(at+b)\left(-\lambda e^{-\lambda t}\right)
+=\Bigl( -\lambda at +\left(a-\lambda b\right)\Bigr) e^{-\lambda t}
+$">
+. 
+
+</p><p>
+Ainsi, <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img119.png" alt="$ G$">
+ est une primitive de <img width="16" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img59.png" alt="$ g$">
+ si, et seulement si, 
+  <!-- MATH
+ $\left\{\begin{array}{ll}
+  -\lambda a=\lambda \\
+  a-\lambda b=0
+  \end{array}\right.
+  \iff 
+  \left\{\begin{array}{ll}
+  a=-1 \\
+  b=-\dfrac{1}{\lambda }
+  \end{array}\right.$
+ -->
+<img width="311" height="90" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img197.png" alt="$ \left\{\begin{array}{ll}
+-\lambda a=\lambda \\
+a-\lambda b=0
+\end{array}\r...
+...left\{\begin{array}{ll}
+a=-1 \\
+b=-\dfrac{1}{\lambda }
+\end{array}\right.
+$">
+. 
+
+</p><p>
+Donc, pour tout <!-- MATH
+ $t\geqslant 0$
+ -->
+<img width="52" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img198.png" alt="$ t\geqslant 0$">
+, 
+  <!-- MATH
+ $G(t)=\left(-t-\dfrac{1}{\lambda }\right)e^{-\lambda t}$
+ -->
+<img width="214" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img199.png" alt="$ G(t)=\left(-t-\dfrac{1}{\lambda }\right)e^{-\lambda t}$">
+ est une primitive de
+  <!-- MATH
+ $f(t)=\lambda t e^{-\lambda t}$
+ -->
+<img width="128" height="45" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img200.png" alt="$ f(t)=\lambda t e^{-\lambda t}$">
+, 
+  et alors 
+  </p><p><!-- MATH
+ \begin{displaymath}
+E(X)
+  =\lim_{x\to+\infty}\int_0^{x} t\,\lambda e^{-\lambda t}\,dt
+  =\lim_{x\to+\infty}\Bigl[ G(t) \Bigr]_0^x
+  =\lim_{x\to+\infty} \Bigl( G(x)-G(0)\Bigr)
+  =\lim_{x\to+\infty}  \Bigl( G(x)-G(0)\Bigr)
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="844" height="70" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img201.png" alt="$\displaystyle E(X)
+=\lim_{x\to+\infty}\int_0^{x} t\,\lambda e^{-\lambda t}\,dt...
+...to+\infty} \Bigl( G(x)-G(0)\Bigr)
+=\lim_{x\to+\infty} \Bigl( G(x)-G(0)\Bigr)
+$">
+</div><p>
+</p>
+or, <!-- MATH
+ $G(0)=-\dfrac{1}{\lambda }$
+ -->
+<img width="111" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img202.png" alt="$ G(0)=-\dfrac{1}{\lambda }$">
+, et 
+  <!-- MATH
+ $\displaystyle \lim_{x\to+\infty} e^{-\lambda x}=0$
+ -->
+<img width="139" height="47" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img203.png" alt="$ \displaystyle \lim_{x\to+\infty} e^{-\lambda x}=0$">
+ et 
+  <!-- MATH
+ $\displaystyle \lim_{x\to+\infty} xe^{-\lambda x}=0$
+ -->
+<img width="151" height="47" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img204.png" alt="$ \displaystyle \lim_{x\to+\infty} xe^{-\lambda x}=0$">
+, d'où 
+  <!-- MATH
+ $\displaystyle \lim_{x\to+\infty} G(x)=0$
+ -->
+<img width="144" height="43" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img205.png" alt="$ \displaystyle \lim_{x\to+\infty} G(x)=0$">
+. 
+
+<p>
+Ainsi, au final, 
+  <!-- MATH
+ $E(X)=\dfrac{1}{\lambda }$
+ -->
+<img width="103" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img190.png" alt="$ E(X)=\dfrac{1}{\lambda }$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+</p><div class="prop">
+<h4 id="SECTION00072020000000000000"><span class="pt">Propriété</span></h4>
+Soit <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$ X$">
+une variable aléatoire suivant la loi normale centrée réduite 
+<img width="73" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img206.png" alt="$ \mathcal{N}(0;1)$">, 
+alors pour tout réel 
+<img width="82" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img207.png" alt="$\alpha\in]0;1[$">, 
+il existe un unique réel 
+<img width="67" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img208.png" alt="$u_\alpha&gt;0$">
+tel que 
+<img width="260" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img209.png" alt="$ P\left(-u_\alpha\leqslant X\leqslant u_\alpha\right)=1-\alpha$">.
+</div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  Par symétrie de la densité de probabilité <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ de la loi normale
+  centrée réduite, 
+  on a 
+  </p><p><!-- MATH
+ \begin{displaymath}
+P\left(-u\leqslant X\leqslant u\right)=2\,P\left(0\leqslant X\leqslant u\right)
+  =2\int_0^u f(x)\,dx=2F(u)\ ,
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="581" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img210.png" alt="$\displaystyle P\left(-u\leqslant X\leqslant u\right)=2\,P\left(0\leqslant X\leqslant u\right)
+=2\int_0^u f(x)\,dx=2F(u)\ ,
+$">
+</div><p>
+</p>
+où <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+ est la primitive de <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ sur <!-- MATH
+ ${\rm I\kern-.1567em R}$
+ -->
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img55.png" alt="$ {\rm I\kern-.1567em R}$">
+ qui s'annule en 0
+. 
+
+<p>
+<br>
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img97.png" alt="$ F$">
+ est continue (et même dérivable) et croissante sur <!-- MATH
+ $[0;+\infty[$
+ -->
+<img width="75" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img191.png" alt="$ [0;+\infty[$">
+
+  car <img width="68" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img114.png" alt="$ F&#39;=f$">
+ et <img width="57" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img211.png" alt="$ f&gt;0$">
+. 
+
+</p><p>
+De plus, <!-- MATH
+ $\displaystyle \lim_{u\to+\infty} G(u)=\dfrac12$
+ -->
+<img width="149" height="67" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img212.png" alt="$ \displaystyle \lim_{u\to+\infty} G(u)=\dfrac12$">
+: il s'agit de l'aire
+  sous la courbe de <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ qui est symétrique par rapport à l'axe des
+  ordonnées et dont l'aire totale (de <img width="44" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img92.png" alt="$ -\infty$">
+ à <img width="43" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img50.png" alt="$ +\infty$">
+) vaut
+  <img width="16" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img87.png" alt="$ 1$">
+. 
+
+</p><p>
+On a donc le tableau de variation de la fonction <img width="33" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img213.png" alt="$ 2F$">
+: 
+  </p><p><!-- MATH
+ \begin{displaymath}
+\begin{tabular}{|c|ccc|}\hline
+    $x$\  & $0$\  &\hspace*{1cm}& $+\infty$\  \\\hline
+    &&&1\\
+    $2F$\  && \psline{->}(-0.8,-0.3)(1,0.5)&\\
+    &0&& \\\hline
+  \end{tabular}
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="219" height="127" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img214.png" alt="$\displaystyle \begin{tabular}{\vert c\vert ccc\vert}\hline
+$x$\ &amp; $0$\ &amp;\hspac...
+...\\
+$2F$\ &amp;&amp; \psline{-&gt;}(-0.8,-0.3)(1,0.5)&amp;\\
+&amp;0&amp;&amp; \\ \hline
+\end{tabular} $">
+</div><p>
+</p>
+
+<p>
+Comme pour tout nombre <!-- MATH
+ $\alpha\in]0;1[$
+ -->
+<img width="82" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img207.png" alt="$ \alpha\in]0;1[$">
+, le nombre
+  <!-- MATH
+ $1-\alpha\in]0;1[$
+ -->
+<img width="119" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img215.png" alt="$ 1-\alpha\in]0;1[$">
+, 
+  d'après le théorème des valeurs intermédiaires, 
+  il existe un unique <!-- MATH
+ $u_\alpha\in]0;+\infty[$
+ -->
+<img width="118" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img216.png" alt="$ u_\alpha\in]0;+\infty[$">
+ tel que 
+  <!-- MATH
+ $2F\left(u_\alpha\right)=1-\alpha$
+ -->
+<img width="154" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img217.png" alt="$ 2F\left(u_\alpha\right)=1-\alpha$">
+, 
+  c'est-à-dire tel que <br>  <!-- MATH
+ $P\left(-u_\alpha\leqslant X\leqslant u_\alpha\right)=1-\alpha$
+ -->
+<img width="260" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img209.png" alt="$ P\left(-u_\alpha\leqslant X\leqslant u_\alpha\right)=1-\alpha$">
+.
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+</p><p>
+
+<br><br>
+</p><h3><a id="SECTION00073000000000000000">
+Intervalle de fluctuation</a>
+</h3>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00073010000000000000"><span class="pt">Propriété</span></h4>
+Soit <img width="33" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img218.png" alt="$X_n$">
+une variable aléatoire suivant la loi binomiale
+<img width="69" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img219.png" alt="$ \mathcal{B}(n;p)$">, alors pour tout  
+<img width="82" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img207.png" alt="$ \alpha\in]0;1[$">, on a 
+<p></p>
+<div class="ct">
+<img width="270" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img220.png" alt="$\displaystyle \lim_{n\to+\infty} P\left(\frac{X_n}{n}\in I_n\right)=1-\alpha$">
+</div><p>
+</p>
+où <img width="25" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img221.png" alt="$ I_n$">
+ désigne l'intervalle
+  <p></p>
+<div class="ct">
+<img width="367" height="85" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img222.png" alt="$\displaystyle \left[
+p-u_\alpha\frac{\sqrt{p(1-p)}}{\sqrt{n}}\,;\,
+p+u_\alpha\frac{\sqrt{p(1-p)}}{\sqrt{n}}
+\right]$">
+</div><p>
+</p>
+avec <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img223.png" alt="$ u_\alpha$">
+ le nombre tel que, si <img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$ X$">
+ suit la loi normale
+<img width="73" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img206.png" alt="$ \mathcal{N}(0;1)$">, 
+  <p></p>
+<div class="ct">
+<img width="256" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img224.png" alt="$\displaystyle P(-u_\alpha\leqslant X\leqslant u_\alpha)=1-\alpha$">
+</div><p>
+</p>
+L'intervalle <img width="25" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img221.png" alt="$I_n$">
+ s'appelle l'intervalle de fluctuation au seuil
+  <img width="56" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img225.png" alt="$ 1-\alpha$">. 
+</div>
+
+<p>
+<br>
+
+  <br>
+  <u>Démonstration:</u> 
+  Si <img width="33" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img218.png" alt="$ X_n$">
+ suit la loi binomiale <!-- MATH
+ $\mathcal{B}(n;p)$
+ -->
+<img width="69" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img219.png" alt="$ \mathcal{B}(n;p)$">
+, 
+  alors d'après le théorème de Moivre-Laplace, 
+  pour <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+ assez grand, 
+  <img width="33" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img218.png" alt="$ X_n$">
+ suit approximativement la loi normale <!-- MATH
+ $\mathcal{N}(np;\sqrt{np(1-p)})$
+ -->
+<img width="184" height="50" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img226.png" alt="$ \mathcal{N}(np;\sqrt{np(1-p)})$">
+, 
+  et donc, la variable aléatoire <!-- MATH
+ $\dfrac{X_n}{n}$
+ -->
+<img width="37" height="68" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img227.png" alt="$ \dfrac{X_n}{n}$">
+ suit
+  approximativement la loi normale 
+  <!-- MATH
+ $\mathcal{N}\left(\dfrac{np}{n};\dfrac{\sqrt{np(1-p)}}{n}\right)$
+ -->
+<img width="214" height="85" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img228.png" alt="$ \mathcal{N}\left(\dfrac{np}{n};\dfrac{\sqrt{np(1-p)}}{n}\right)$">
+, 
+  soit la loi normale 
+  <!-- MATH
+ $\mathcal{N}\left(p;\sigma\right)$
+ -->
+<img width="79" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img229.png" alt="$ \mathcal{N}\left(p;\sigma\right)$">
+, 
+  avec <!-- MATH
+ $\sigma=\sqrt{\dfrac{p(1-p)}{n}}$
+ -->
+<img width="147" height="81" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img230.png" alt="$ \sigma=\sqrt{\dfrac{p(1-p)}{n}}$">
+. 
+
+</p><p>
+<br>
+On cherche alors <img width="16" height="19" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img231.png" alt="$ \delta$">
+ tel que 
+  </p><p><!-- MATH
+ \begin{displaymath}
+P\left(p-\delta\leqslant \dfrac{X_n}{n}\leqslant p+\delta\right)
+  =1-\alpha
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="320" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img232.png" alt="$\displaystyle P\left(p-\delta\leqslant \dfrac{X_n}{n}\leqslant p+\delta\right)
+=1-\alpha
+$">
+</div><p>
+</p>
+En ramenant la variable <!-- MATH
+ $\dfrac{X_n}{n}$
+ -->
+<img width="37" height="68" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img227.png" alt="$ \dfrac{X_n}{n}$">
+ à une variable suivant la 
+  loi normale réduite <!-- MATH
+ $\mathcal{N}(0;1)$
+ -->
+<img width="73" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img206.png" alt="$ \mathcal{N}(0;1)$">
+: 
+  <p><!-- MATH
+ \begin{displaymath}
+P\left(-\frac{\delta}{\sigma}\leqslant 
+  \dfrac{\dfrac{X_n}{n}-p}{\sigma}\leqslant 
+  \frac{\delta}{\sigma}\right)
+  =1-\alpha
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="324" height="115" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img233.png" alt="$\displaystyle P\left(-\frac{\delta}{\sigma}\leqslant
+\dfrac{\dfrac{X_n}{n}-p}{\sigma}\leqslant
+\frac{\delta}{\sigma}\right)
+=1-\alpha
+$">
+</div><p>
+</p>
+
+<p>
+La variable aléatoire <!-- MATH
+ $\displaystyle X=\dfrac{\dfrac{X_n}{n}-p}{\sigma}$
+ -->
+<img width="126" height="115" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img234.png" alt="$ \displaystyle X=\dfrac{\dfrac{X_n}{n}-p}{\sigma}$">
+ suit 
+  une loi normale centrée réduite <!-- MATH
+ $\mathcal{N}(0;1)$
+ -->
+<img width="73" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img206.png" alt="$ \mathcal{N}(0;1)$">
+, et on sait donc
+  qu'il existe un unique nombre <img width="28" height="37" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img223.png" alt="$ u_\alpha$">
+ tel que 
+  </p><p><!-- MATH
+ \begin{displaymath}
+P(-u_\alpha\leqslant X\leqslant u_\alpha)=1-\alpha\,.
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="266" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img235.png" alt="$\displaystyle P(-u_\alpha\leqslant X\leqslant u_\alpha)=1-\alpha\,.
+$">
+</div><p>
+</p>
+
+<p>
+<br>
+Le théorème est donc vérifié pour 
+  <!-- MATH
+ $\dfrac{\delta}{\sigma}=u_\alpha$
+ -->
+<img width="74" height="69" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img236.png" alt="$ \dfrac{\delta}{\sigma}=u_\alpha$">
+, 
+  soit 
+  <!-- MATH
+ $\delta=u_\alpha\sigma=u_\alpha\sqrt{\dfrac{p(1-p)}{n}}$
+ -->
+<img width="231" height="81" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img237.png" alt="$ \delta=u_\alpha\sigma=u_\alpha\sqrt{\dfrac{p(1-p)}{n}}$">
+, et on a
+  donc, pour <img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+ assez grand, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+P\left(\frac{X_n}{n}\in I_n\right)=1-\alpha
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="214" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img238.png" alt="$\displaystyle P\left(\frac{X_n}{n}\in I_n\right)=1-\alpha
+$">
+</div><p>
+</p>
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$ \square$">
+
+
+<p>
+
+<br><br>
+</p><h3><a id="SECTION00074000000000000000">
+Estimation</a>
+</h3>
+
+<p>
+
+</p><div class="prop">
+<h4 id="SECTION00074010000000000000"><span class="pt">Propriété</span></h4>
+On considère la variable aléatoire 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$X$">
+qui à tout échantillon de taille&nbsp;
+<img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$ n$">
+associe le nombre d'individus possédant le caractère étudié. 
+On suppose que 
+<img width="25" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img188.png" alt="$X$">
+suit une loi binomiale 
+<img width="71" height="42" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img239.png" alt="$ \mathcal{B}(n,f)$">, 
+et on note 
+<img width="75" height="68" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img240.png" alt="$ f&#39;=\dfrac{X}{n}$">
+la fréquence du caractère dans l'échantillon. 
+
+<p>
+Alors, pour 
+<img width="18" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img31.png" alt="$n$">
+assez grand, l'intervalle 
+  </p><p></p>
+<div class="ct">
+<img width="264" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img241.png" alt="$\displaystyle I_n=\left[f&#39;-\dfrac{1}{\sqrt{n}}\,;\,f&#39;+\dfrac{1}{\sqrt{n}}\right]\,.$">
+</div><p>
+</p>
+contient la fréquence 
+<img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$f$">
+du caractère dans la population avec une probabilité supérieure ou égale à 0,95. 
+
+<p>
+L'intervalle <img width="25" height="39" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img221.png" alt="$I_n$">
+s'appelle l'intervalle au niveau de confiance de 95%. 
+</p></div>
+
+<p>
+
+  <br>
+  <u>Démonstration:</u> 
+  La fréquence <img width="23" height="41" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img242.png" alt="$ f&#39;$">
+ du caractère dans l'échantillon est une valeur
+  prise par la variable aléatoire <!-- MATH
+ $\dfrac{X}{n}$
+ -->
+<img width="29" height="68" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img243.png" alt="$ \dfrac{X}{n}$">
+. 
+  Elle est ou n'est pas dans l'intervalle 
+  <!-- MATH
+ $\left[f-\dfrac{1}{\sqrt{n}}\,;\,f+\dfrac{1}{\sqrt{n}}\right]$
+ -->
+<img width="193" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img244.png" alt="$ \left[f-\dfrac{1}{\sqrt{n}}\,;\,f+\dfrac{1}{\sqrt{n}}\right]$">
+, 
+  mais on sait que 95% des fréquences des échantillons sont dans cet
+  intervalle. 
+
+</p><p>
+<br>
+De plus, <br>
+  </p><p><!-- MATH
+ \begin{displaymath}
+\begin{array}{ll}
+  f\in \left[f'-\dfrac{1}{\sqrt{n}}\,;\,f'+\dfrac{1}{\sqrt{n}}\right]
+  &\iff 
+  f'-\dfrac{1}{\sqrt{n}}\leqslant f \leqslant f'+\dfrac{1}{\sqrt{n}}\\
+  &\iff
+  \left\{\begin{array}{ll}
+  f'\geqslant f-\dfrac{1}{\sqrt{n}} \\
+  f'\leqslant f+\dfrac{1}{\sqrt{n}}
+  \end{array}\right.\\[0.4cm]
+  &\iff
+  \left\{\begin{array}{ll}
+  f'+\dfrac{1}{\sqrt{n}}\geqslant f \\
+  f'-\dfrac{1}{\sqrt{n}}\leqslant f
+  \end{array}\right.\\[0.3cm]
+  \end{array}
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="538" height="254" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img245.png" alt="\begin{displaymath}\begin{array}{ll}
+f\in \left[f&#39;-\dfrac{1}{\sqrt{n}}\,;\,f&#39;+\...
+...\sqrt{n}}\leqslant f
+\end{array}\right.\\ [0.3cm]
+\end{array}\end{displaymath}">
+</div><p>
+</p>
+
+<p>
+Et on a donc, 
+  </p><p><!-- MATH
+ \begin{displaymath}
+f'\in \left[f-\dfrac{1}{\sqrt{n}}\,;\,f+\dfrac{1}{\sqrt{n}}\right]
+  \iff
+  f\in \left[f'-\dfrac{1}{\sqrt{n}}\,;\,f'+\dfrac{1}{\sqrt{n}}\right]
+\end{displaymath}
+ -->
+</p>
+<div class="ct">
+<img width="537" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img246.png" alt="$\displaystyle f&#39;\in \left[f-\dfrac{1}{\sqrt{n}}\,;\,f+\dfrac{1}{\sqrt{n}}\right]
+\iff
+f\in \left[f&#39;-\dfrac{1}{\sqrt{n}}\,;\,f&#39;+\dfrac{1}{\sqrt{n}}\right]
+$">
+</div><p>
+</p>
+
+<p>
+Ainsi, <img width="18" height="40" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img54.png" alt="$ f$">
+ sera dans 95% des intervalles du type 
+  <!-- MATH
+ $I_n=\left[f'-\dfrac{1}{\sqrt{n}}\,;\, f'+\dfrac{1}{\sqrt{n}}\right]$
+ -->
+<img width="251" height="72" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img247.png" alt="$ I_n=\left[f&#39;-\dfrac{1}{\sqrt{n}}\,;\, f&#39;+\dfrac{1}{\sqrt{n}}\right]$">
+. 
+ 
+  <img width="22" height="18" class="bt" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/img17.png" alt="$\square$">
+
+</p></div>
+
+
+<hr><br><br>
+<form method="post" action="http://xymaths.free.fr/Lycee/TS/Mathematiques-Terminale-S.php">
+<input type="submit" value="Retour à la page terminale S">
+</form> 
+
+</article>
+
+<div class="FixedBottomright">
+<span class="it">Haut de la page</span>
+<a href="http://xymaths.free.fr/Lycee/TS/ROC-Demonstration-Cours-TS.php#top"><img width="24" height="24" class="md" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/fleche_Haut_24x24.png" alt="Top link / Haut de la page">
+</a></div>
+
+
+<br><br>
+<footer>
+<nav id="YM"><a href="http://xymaths.free.fr/index.php?dir=Divers&amp;subdir=Contact">Yoann Morel</a>
+&nbsp;<a href="http://xymaths.free.fr/">xymaths</a></nav>
+<time datetime="2016-03-17" id="MAJ">Dernière mise à jour:17/03/2016</time>
+</footer>
+
+</div> <!-- fin maincontent -->
+
+
+</div> <!-- fin content -->
+  <script type="text/javascript" src="./ROC - Restitution Organisée des Connaissances - Démonstrations en TS_files/jFS9zypYBADRl" title="Slide In"></script>
+
+
+
+<script type="text/javascript">
+document.getElementById("pubtop").appendChild(document.getElementById("pubtopafter"));
+</script>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+</body></html>

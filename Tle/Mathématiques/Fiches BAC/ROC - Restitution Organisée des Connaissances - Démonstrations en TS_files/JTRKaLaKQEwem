@@ -1,0 +1,218 @@
+
+
+var apicitDatas = '1/cla/cit12334';
+
+
+
+(function(){
+
+
+var $PROTOCOL = window.location.protocol;//'http:';
+
+
+
+
+
+
+
+
+var positionAvailable = 1;
+var topWindow = window;
+var forDebug = '';
+try {
+	while (topWindow.parent.document !== topWindow.document)
+	{
+		topWindow = topWindow.parent;
+		forDebug += 'X';
+	}
+}
+catch(e)
+{
+	positionAvailable = 0;
+		forDebug += 'Y';
+}
+
+try {
+	var doc = topWindow.document;
+	document.mainDoc = doc;
+	if (typeof doc.citVars == 'undefined') doc.citVars = {};
+}
+catch(e){
+	topWindow = window;
+	var doc = topWindow.document;
+	document.mainDoc = doc;
+	if (typeof doc.citVars == 'undefined') doc.citVars = {};
+}
+
+
+//
+// System pour n'appeler qu'une seule fois l'apicit loader
+//
+doc.citVars.launcher = function(fct, fctAdsafe, opts){
+	if (typeof fctAdsafe != 'undefined')
+	{
+		if (doc.citVars.adsafeLoaded)
+		{
+			fctAdsafe();
+		}
+		else
+		{
+			if (typeof doc.citVars.adsafefcts == 'undefined') doc.citVars.adsafefcts = [];
+			doc.citVars.adsafefcts.push(fctAdsafe);
+		}
+	}
+
+	if (typeof doc.citVars.apicited != 'undefined')
+	{
+		fct();
+	}
+	else
+	{
+		if (typeof doc.citVars.launcherfcts == 'undefined') doc.citVars.launcherfcts = [];
+		doc.citVars.launcherfcts.push(fct);
+
+		if (typeof doc.citVars.apicitcalled == 'undefined')
+		{
+			doc.citVars.apicitcalled = true;
+			
+			document.onapicitCall = function(t, tm){
+				doc.citVars.t = t;
+				doc.citVars.tm = tm;
+				doc.citVars.apicited = true;
+				var a = 0;
+				while (typeof doc.citVars.launcherfcts[a] != 'undefined')
+				{
+					doc.citVars.launcherfcts[a++]();
+				}
+			}
+
+			document.write('<sc' + 'ript type="text/javascript" src="http://lb.apicit.net/loader.v8.php?apicitDatas=1%2Fcla%2Fcit12334&RK=CIT&call=document.onapicitCall&jQ="></scr' + 'ipt>');
+
+		}
+	}
+};
+
+
+
+
+if (typeof doc.citVars.nbcla == 'undefined') doc.citVars.nbcla = 0;
+var localNbCla = doc.citVars.nbcla + 0;
+doc.citVars.nbcla++;
+
+
+
+//
+// Au chargement de la frame
+//
+try {
+	document.fallBackClassicframeCITd533ff6bbf58509efb2ba3ca8e58bb01 = document.cmCitFallBack;
+	document.fallBackClassicframeCITd533ff6bbf58509efb2ba3ca8e58bb01i = function(taken, fctCall){
+		if (!taken)
+		{
+			doc.citQuery(document.getElementById('frameCITd533ff6bbf58509efb2ba3ca8e58bb01i')).remove();
+			doc.citVars.nbClassicIAB--;
+		}
+		document.fallBackClassicframeCITd533ff6bbf58509efb2ba3ca8e58bb01(taken, fctCall);
+	};
+}catch(e){
+
+};
+
+
+
+document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01 = function(iframe, fromframe){
+
+
+
+
+	try {
+		var iframe = document.getElementById('frameCITd533ff6bbf58509efb2ba3ca8e58bb01i');
+
+		try {
+			var dociframe;
+			if(iframe.contentDocument)
+				dociframe = iframe.contentDocument;
+			else if(iframe.contentWindow)
+				dociframe = iframe.contentWindow.document;
+			else if(iframe.document)
+				dociframe = iframe.document;
+		}
+		catch(e){
+			return;
+		}
+		
+		if (!document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01Cleaned)
+		{
+			document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01Cleaned = true;
+			dociframe.open();
+			dociframe.write('<html><head><script>document.antiReloadX = true;</script></head><body></body></html>');
+			dociframe.close();
+
+		}
+		
+		if (typeof doc.citVars.apicited != 'undefined')
+		{
+			if (!document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01ContentLoaded)
+			{
+				document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01ContentLoaded = true;
+				if (doc.citVars.nbClassicIAB >= 3)
+				{
+					doc.citQuery(document.getElementById('frameCITd533ff6bbf58509efb2ba3ca8e58bb01i')).remove();
+					try {
+						document.fallBackClassicframeCITd533ff6bbf58509efb2ba3ca8e58bb01i(0);
+					}catch(e){}
+					return;
+				}
+				doc.citVars.nbClassicIAB++;
+			
+				var citTopLocation = doc.location.href;
+				
+				
+				
+var moreParams = "";
+var force = document.location.href.split('#citslidein_');
+if (force[1])
+{
+	force = force[1].split('_')[1];
+	moreParams += "&forceprotected=aaaaa_" + force;
+}
+	
+	
+				var js = document.createElement('script');
+				js.type = 'text/javascript';
+				js.src = $PROTOCOL + '//www-105-classic.clickintext.net/execs/content.php?v=1.0&a=12334&f=120x600&zk=JTRKaLaKQEwem&ccn=' + localNbCla + '&frameId=frameCITd533ff6bbf58509efb2ba3ca8e58bb01i&apicitIdPAPXTime=' + (doc.citVars.t) + '&apicitIdPAPXTimeMore=' + (doc.citVars.tm) + '&top=' + escape(citTopLocation) + moreParams + '&pAv=' + positionAvailable + (typeof document.CMRPrivateKeys != 'undefined' ? '&' + document.CMRPrivateKeys : '') + (doc.citVars.isMobile ? '&mobile=1' : '&mobile=0');
+
+
+
+
+				if (document.body.firstChild)
+					document.body.insertBefore(js, document.body.firstChild);
+				else
+					document.body.appendChild(js);
+			}
+		}
+	}catch(e){
+
+	}
+	};
+
+	
+
+
+document.write('<iframe src="javascript:false;" id="frameCITd533ff6bbf58509efb2ba3ca8e58bb01i" frameBorder="0" style="width: 120px; height: 600px;" scrolling="no"  allowtransparency="true" onload="document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01L2 = true; document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01(this, 1);"></iframe>');
+
+
+
+
+
+doc.citVars.launcher(document.frameCITd533ff6bbf58509efb2ba3ca8e58bb01, function(){
+		doc.citVars.adsafeTags.push('150556');
+	doc.citVars.takeALook();
+		});
+
+
+
+
+
+
+})();
