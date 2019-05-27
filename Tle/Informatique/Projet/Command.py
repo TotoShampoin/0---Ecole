@@ -1,6 +1,6 @@
 import pygame
 
-def control(player, inGame):
+def control(player, inGame, niv):
     key = pygame.key.get_pressed()          #Les fonctions où la touche peut être maintenue
     if inGame:
         if key[pygame.K_DOWN]:                      #flèche bas
@@ -26,6 +26,18 @@ def control(player, inGame):
             player.moving = True
         else:
             player.moving = False
+        
+        x , y = player.x , player.y
+        if y>0 and y<15:
+            if (player.frame[1] == 0 or player.frame[1] == 1 or player.frame[1] == 5) and niv.sol[y+1][x]!=1:
+                player.moving = False
+            if (player.frame[1] == 6 or player.frame[1] == 3 or player.frame[1] == 7) and niv.sol[y-1][x]!=1:
+                player.moving = False
+        if x>0 and x<15:
+            if (player.frame[1] == 2 or player.frame[1] == 1 or player.frame[1] == 3) and niv.sol[y][x+1]!=1:
+                player.moving = False
+            if (player.frame[1] == 4 or player.frame[1] == 5 or player.frame[1] == 7) and niv.sol[y][x-1]!=1:
+                player.moving = False
 
 def move(player, inGame):
     if inGame:
