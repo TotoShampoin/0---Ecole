@@ -3,9 +3,13 @@ from Classes import *
 from Command import *
 from text import *
 
+with open("config.txt", 'r') as config:
+    zoomFact = eval(config.readline())
+    fullscreen = eval(config.readline())
+
 print("Initialisation")
 pygame.init()
-window = pygame.display.set_mode((1280,720))
+window = pygame.display.set_mode((640*zoomFact,360*zoomFact), pygame.FULLSCREEN*fullscreen)
 screen = pygame.surface.Surface((640,360))
 inView = pygame.surface.Surface((288,232))
 
@@ -42,15 +46,19 @@ curs = 0
 
 diplayer = False
 
-def plot(x,y,c):
+def plotsol(x,y):
     frame = niv.sol[y][x]
     idd = niv.coffres[y][x]
     if frame!=0:
-        if c:
-            if isOpen==idd and isOpen!=None:
-                inView.blit(coffres, (x*16,y*12), (0,104,48,52))
-            else:
-                inView.blit(coffres, (x*16,y*12), (0,52,48,52))
+        if isOpen==idd and isOpen!=None:
+            inView.blit(coffres, (x*16,y*12), (0,104,48,52))
+        else:
+            inView.blit(coffres, (x*16,y*12), (0,52,48,52))
+
+def plot(x,y):
+    frame = niv.sol[y][x]
+    idd = niv.coffres[y][x]
+    if frame!=0:
         if frame>3:
             if isOpen==idd:
                 inView.blit(coffres, (x*16,y*12), (int(frame/4)*96,(frame%4)*52,48,52))
@@ -58,36 +66,24 @@ def plot(x,y,c):
                 inView.blit(coffres, (x*16,y*12), (int(frame/4)*96-48,(frame%4)*52,48,52))
         if frame>47:
             #inView.blit(meubles, (x*16,y*12), (int(frame/4)*96-48,(frame%4)*52,48,52))
+            0
 
 def buffer():
     inView.fill(0)
     posX , posY = 0,0
-    for x in range(16):
-        for y in range(16):
-            frame = niv.sol[y][x]
-            if frame!=0:
-                plot(x,y,1)
-            if y>0:
-                plot(x,y-1,0)
-            px , py = player.x , player.y
-            if (x == px and y == py) or (x == px and y == py+1) or (x == px+1 and y == py+1) or (x == px+1 and y == py):
-                plfr = [int(player.frame[0])*16,int(player.frame[1]/2)*28]
-                posX = px*16+16+player.tr_x
-                posY = py*12+28+int(player.tr_y)-16
-                inView.blit(sprites, (posX,posY),plfr+[16,28])
-                if py<15:
-                    plot(px,py+1,0)
-                if py<14:
-                    plot(px,py+2,0)
-                if px<15:
-                    plot(px+1,py,0)
-                if px>0:
-                    plot(px-1,py,0)
-                if px>0 and py<15:
-                    plot(px-1,py+1,0)
-                if px>0 and py<14:
-                    plot(px-1,py+2,0)
-                
+    for y in range(16):
+        for x in range(16):
+            plotsol(x,y)
+    for y in range(16):
+        px , py = player.x , player.y
+        if y==py:
+            plfr = [int(player.frame[0])*16,int(player.frame[1]/2)*28]
+            posX = px*16+16+player.tr_x
+            posY = py*12+28+int(player.tr_y)-16
+            inView.blit(sprites, (posX,posY),plfr+[16,28])
+        for x in range(16):
+            plot(x,y)
+            
             
     inView2 = pygame.transform.scale(inView, (inView.get_width()*4,inView.get_height()*4))
     camX = posX
