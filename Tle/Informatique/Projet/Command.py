@@ -19,9 +19,9 @@ def control(player, inGame, niv):
             player.frame[1] = 5
         if key[pygame.K_UP] and key[pygame.K_LEFT]:                     #flèche haut
             player.frame[1] = 7
-        if key[32]:                                 #barre espace
-            print("interagir")
-    
+        if int(player.frame[1]/2)==niv.start[2] and [player.x,player.y]==niv.start[0:2] and 1 in key:
+            return True
+        
         if key[pygame.K_DOWN] or key[pygame.K_UP] or key[pygame.K_RIGHT] or key[pygame.K_LEFT]:
             player.moving = True
         else:
@@ -38,6 +38,8 @@ def control(player, inGame, niv):
                 player.moving = False
             if (player.frame[1] == 4 or player.frame[1] == 5 or player.frame[1] == 7) and niv.sol[y][x-1]!=1:
                 player.moving = False
+    return False
+                
 
 def move(player, inGame):
     if inGame:

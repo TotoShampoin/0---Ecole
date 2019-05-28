@@ -7,7 +7,8 @@ class Joueur:
     moving = False
     
     sac = []
-    maxSac = 15
+    pdSac = 0
+    maxSac = 64
     
     def __repr__(self):
         return 'x(%s,%s) y(%s,%s) sac(%s/%s)' % (self.x,self.tr_x , self.y,self.tr_y , self.sac,self.maxSac)
@@ -24,11 +25,14 @@ class Joueur:
         if self.tr_x<0: self.tr_x += 1
         if self.tr_y>0: self.tr_y -= 0.75
         if self.tr_y<0: self.tr_y += 0.75
+        self.pdSac = 0
+        for k in self.sac:
+            self.pdSac += k[2]
 
 class Niveau:
-    sol = []        #Les zones où on peut marcher (nombres). 0 = mur ; 1 = sol ; 2 = entrée (sol)
+    sol = []        #Les zones où on peut marcher (nombres). 0 = mur ; 1 = sol ; >4 = coffre ; >48 = meuble
     coffres = []    #Les coffres, par id (nombres)
-    contenu = []    #Le contenu et l'apparence de chaque coffre, identifié par son id (dictionnaire {"id":[liste]} )
+    contenu = []    #Le contenu de chaque case, identifié par son id (dictionnaire {"id":[liste]} )
     start = []      #Le point de départ
     time = int()    #Le temps imparti, en secondes
     
@@ -37,23 +41,28 @@ class Niveau:
             text = ""
             for x in range(16):
                 fr = f.readline()
+                print(fr,end='')
                 text += fr
             self.sol = eval(text)
             text = ""
             for x in range(16):
                 fr = f.readline()
+                print(fr,end='')
                 text += fr
             self.coffres = eval(text)
             text = ""
             while True:
                 fr = f.readline()
+                print(fr,end='')
                 if fr=="STOP\n":
                     break
                 text += fr
             self.contenu = eval(text)
             fr = f.readline()
+            print(fr,end='')
             self.start = eval(fr)
             fr = f.readline()
+            print(fr,end='')
             self.time = eval(fr)
     
     def __repr__(self):
