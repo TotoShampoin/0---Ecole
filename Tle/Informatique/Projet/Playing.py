@@ -21,7 +21,6 @@ pygame.display.flip()
 from Hud import *
 
 sprites = pygame.image.load("PlayerSprites.png").convert_alpha()
-floors  = pygame.image.load("Floors.png").convert_alpha()
 coffres = pygame.image.load("Containers 4ways.png").convert_alpha()
 #meubles = pygame.image.load("Meubles.png").convert_alpha()
 
@@ -174,7 +173,7 @@ while cont:
                         curs = (curs+1)%8
                     if event.key == pygame.K_RETURN:
                         if niv.contenu[isOpen][curs] != [None, 0, 0]:
-                            if len(player.sac)<player.maxSac:
+                            if player.pdSac+niv.contenu[isOpen][curs][2]<=player.maxSac:
                                 player.sac += [niv.contenu[isOpen][curs]]
                                 niv.contenu[isOpen][curs] = [None, 0, 0]
 
