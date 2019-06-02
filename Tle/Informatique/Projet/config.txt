@@ -1,2 +1,0 @@
-1					#facteur du zoom (multiple de 640x360)
-False				#plein écran
