@@ -1,4 +1,4 @@
 {
-    "zoom": 2,
+    "zoom": 1,
     "fullscreen": False
 }
